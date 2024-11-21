@@ -1,8 +1,8 @@
-# Mon Portfolio
+# Portfolio de Data Science - Ethan Lavogez
 
 Bienvenue sur mon portfolio ! 🎉
 
-Je m'appelle **Ethan Lavogez**, étudiant en **Master 1 Data Science en Santé**. Passionné par l'analyse des données et leur application dans des domaines variés, je me spécialise dans la **data science appliquée au football**, un domaine qui me tient à cœur.
+Je m'appelle **Ethan Lavogez**, étudiant en **Master 1 Data Science en Santé**. Passionné par l'analyse des données et leur application dans des domaines variés, je me spécialise dans la **data science appliquée au football (ma passion) et/ou à la santé**, un domaine qui me tient à cœur.
 
 ## 📋 Compétences
 - Analyse de données avec Python et R
@@ -16,9 +16,9 @@ Je m'appelle **Ethan Lavogez**, étudiant en **Master 1 Data Science en Santé**
 2. [Étude de données de santé publique](./projets/projet2/README.md)
 
 ## 📄 Mon CV
-➡️ Consultez mon CV [ici](./CV DS_foot.pdf).
+➡️ Consultez mon CV [ici](../CV DS_foot.pdf).
 
 ## 📞 Contact
-- **Email :** tonemail@example.com
-- **LinkedIn :** [Profil LinkedIn](https://linkedin.com/in/tonprofil)
-- **GitHub :** [Mon GitHub](https://github.com/tonutilisateur)
+- **Email :** ethan.lavogez.etu@univ-lille.fr
+- **LinkedIn :** [Profil LinkedIn](www.linkedin.com/in/ethan-lavogez-b85a59291)
+- **GitHub :** [Mon GitHub]([https://github.com/ethanlavogez])
