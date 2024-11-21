@@ -2,7 +2,7 @@
 
 Bienvenue sur mon portfolio ! 🎉
 
-Je m'appelle **[Ton Prénom et Nom]**, étudiant en **Master 1 Data Science en Santé**. Passionné par l'analyse des données et leur application dans des domaines variés, je me spécialise dans la **data science appliquée au football**, un domaine qui me tient à cœur.
+Je m'appelle **Ethan Lavogez**, étudiant en **Master 1 Data Science en Santé**. Passionné par l'analyse des données et leur application dans des domaines variés, je me spécialise dans la **data science appliquée au football**, un domaine qui me tient à cœur.
 
 ## 📋 Compétences
 - Analyse de données avec Python et R
