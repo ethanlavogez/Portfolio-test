@@ -1,12 +1,16 @@
 # [Portfolio - Ethan Lavogez](https://ethanlavogez.netlify.app/)
 
+
 Bienvenue sur mon portfolio personnel, un projet visant à présenter mon parcours, mes compétences et mes réalisations dans le domaine de la data science appliquée à la santé et au football.
 
+
 Ce site utilise des technologies modernes pour offrir une interface simple, élégante et intuitive. Créé dans le but de centraliser mes expériences et ma passion pour l'analyse des données, ce portfolio reflète mon expertise et mon ambition professionnelle.
+
 
 ## Preview
 
 [![Portfolio Preview](./assets/preview.png)](https://ethanlavogez.netlify.app/)
+
 
 **[View Live Portfolio](https://ethanlavogez.netlify.app/)**
 
@@ -44,4 +48,5 @@ Votre feedback est le bienvenu ! Si vous avez des idées pour améliorer ce po
 1. Forker ce dépôt.
 2. Apporter vos modifications.
 3. Soumettre une pull request pour examen.
+
 
