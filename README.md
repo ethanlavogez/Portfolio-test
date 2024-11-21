@@ -1,24 +1,47 @@
-# Mon Portfolio
+# [Portfolio - Ethan Lavogez](https://ethanlavogez.netlify.app/)
 
-Bienvenue sur mon portfolio ! 🎉
+Bienvenue sur mon portfolio personnel, un projet visant à présenter mon parcours, mes compétences et mes réalisations dans le domaine de la data science appliquée à la santé et au football.
 
-Je m'appelle **[Ton Prénom et Nom]**, étudiant en **Master 1 Data Science en Santé**. Passionné par l'analyse des données et leur application dans des domaines variés, je me spécialise dans la **data science appliquée au football**, un domaine qui me tient à cœur.
+Ce site utilise des technologies modernes pour offrir une interface simple, élégante et intuitive. Créé dans le but de centraliser mes expériences et ma passion pour l'analyse des données, ce portfolio reflète mon expertise et mon ambition professionnelle.
 
-## 📋 Compétences
-- Analyse de données avec Python et R
-- Modélisation statistique et machine learning
-- Visualisation des données (Matplotlib, ggplot2)
-- Gestion et manipulation de bases de données
-- Expertise en santé et en sport (notamment football)
+## Preview
 
-## 📂 Projets
-1. [Analyse des performances des joueurs de football](./projets/projet1/README.md)
-2. [Étude de données de santé publique](./projets/projet2/README.md)
+[![Portfolio Preview](./assets/preview.png)](https://ethanlavogez.netlify.app/)
 
-## 📄 Mon CV
-➡️ Consultez mon CV [ici](./CV DS_foot.pdf).
+**[View Live Portfolio](https://ethanlavogez.netlify.app/)**
 
-## 📞 Contact
-- **Email :** tonemail@example.com
-- **LinkedIn :** [Profil LinkedIn](https://linkedin.com/in/tonprofil)
-- **GitHub :** [Mon GitHub](https://github.com/tonutilisateur)
+## Features
+
+- **Présentation claire** : Une section d'introduction pour se connecter facilement avec les visiteurs.
+- **Parcours professionnel** : Une présentation des expériences, compétences et projets réalisés en data science.
+- **Design moderne** : Basé sur HTML, CSS et des principes de design épurés pour une navigation optimale.
+- **Accès direct** : Téléchargez mon CV et consultez mes réalisations via des liens interactifs.
+
+## Sections
+
+### 🖥️ Accueil
+
+Une vue d'ensemble de mon profil avec un accès rapide à mes compétences clés, mes projets et mes coordonnées.
+
+### 📚 Projets
+
+Découvrez mes travaux réalisés en data science, notamment des analyses de données dans le domaine du football et de la santé.
+
+### 📄 CV
+
+Téléchargez mon CV complet pour explorer en détail mon parcours académique et professionnel.
+
+## Technologies Utilisées
+
+- **HTML5 et CSS3** : Pour une structure sémantique et un style moderne.
+- **Netlify** : Hébergement et déploiement en continu.
+- **GitHub** : Gestion des versions et centralisation du code.
+
+## Comment contribuer ?
+
+Votre feedback est le bienvenu ! Si vous avez des idées pour améliorer ce portfolio ou si vous souhaitez contribuer à son développement, vous pouvez :
+
+1. Forker ce dépôt.
+2. Apporter vos modifications.
+3. Soumettre une pull request pour examen.
+
