@@ -25,3 +25,25 @@ footer {
     background: #333;
     color: #fff;
 }
+
+/* --- Ajout des styles pour la section "À propos" --- */
+#about {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#about h2 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#about p {
+    line-height: 1.6;
+    font-size: 1.1em;
+    color: #555;
+}
