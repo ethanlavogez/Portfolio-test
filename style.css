@@ -36,6 +36,18 @@ header nav ul li a:hover {
     color: #555;
 }
 
+/* Sections (About, Skills, Experience, Contact) */
+section {
+    display: none; /* Masque toutes les sections sauf celle active */
+    height: 100vh;
+    padding: 20px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+section.active {
+    display: block; /* Affiche uniquement la section active */
+}
+
 /* Home Section */
 #home {
     display: flex;
@@ -43,14 +55,13 @@ header nav ul li a:hover {
     align-items: center;
     height: 100vh;
     padding: 0 50px;
-    transition: opacity 0.5s ease-in-out;
 }
 
-.text-content {
+.text-container {
     max-width: 50%;
 }
 
-.text-content h1 {
+.text-container h1 {
     font-size: 3em;
     margin: 10px 0;
     font-weight: bold;
@@ -66,16 +77,10 @@ header nav ul li a:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Sections (About, Experience, Contact) */
-section {
-    display: none; /* Masque toutes les sections sauf celle active */
-    height: 100vh;
+/* About Section */
+#about {
     padding: 20px;
-    transition: opacity 0.5s ease-in-out;
-}
-
-section.active {
-    display: block; /* Affiche la section active */
+    text-align: left;
 }
 
 /* Skills Section */
@@ -102,4 +107,11 @@ section.active {
     margin: 10px 0;
     line-height: 1.6;
 }
+
+/* Contact Section */
+#contact {
+    padding: 20px;
+    text-align: center;
+}
+
 
