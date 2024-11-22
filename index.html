@@ -7,17 +7,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!--Nagigation Menu-->
     <header>
-        <div class="intro-container">
-            <div class="photo-container">
-                <img src="assets/photo.jpg" alt="Photo de profil">
-            </div>
-            <div class="text-container">    
-                <h1>Ethan Lavogez</h1>
-                <p>Student in Healthcare Data Science</p>
-                <a href="#about" class="btn">Learn More</a>
-            </div>
-        </div>        
         <nav>
             <ul>
                 <li><a href="#" data-section="home">Home</a></li>
@@ -28,48 +19,54 @@
             </ul>
         </nav>
     </header>
+    
+    <!--Static Homepage-->
+    <section id="home" class="active">
+        <div class="intro-container">
+            <div class="text-container">
+                <p>Hello, my name is</p>
+                <h1>Ethan Lavogez</h1>
+                <p>Student in Healthcare Data Science</p>
+            </div>
+            <div class="image-content">
+                <img src="assets/photo.jpg" alt="Photo de profil">
+            </div>
+        </div>
+    </section>        
 
-    <main>
-        <section id="home" class="active">
-            <h2>Welcome to my portfolio</h2>
-            <p>This is the homepage</p>
-        </section>
+    <!--About Section-->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            Bonjour et bienvenue sur mon portfolio ! Je m'appelle <strong>Ethan Lavogez</strong>, étudiant en Master Data Science, avec une formation initiale en Sciences pour la Santé. Je suis passionné par l'analyse de données et les technologies, et je souhaite appliquer mes compétences pour résoudre des problèmes complexes dans des domaines tels que la santé et le football, ma passion de toujours.
+        </p>
+        <p>
+            Mon objectif est de combiner ma passion pour les données avec mon amour du football. J'aspire à travailler dans le domaine de la Data Science appliquée au sport, en aidant les clubs et les organisations à améliorer leurs performances grâce à l'analyse de données.
+        </p>
+        <p>
+            En dehors des données, j'aime me plonger dans les stratégies sportives, suivre les championnats de football, et explorer de nouvelles technologies pour enrichir mes compétences.
+        </p>
+    </section>
 
-        <section id="about">
-            <h2>About Me</h2>
-            <p>
-                Bonjour et bienvenue sur mon portfolio ! Je m'appelle <strong>Ethan Lavogez</strong>, étudiant en Master Data Science, avec une formation initiale en Sciences pour la Santé. Je suis passionné par l'analyse de données et les technologies, et je souhaite appliquer mes compétences pour résoudre des problèmes complexes dans des domaines tels que la santé et le football, ma passion de toujours.
-            </p>
-            <p>
-                Mon objectif est de combiner ma passion pour les données avec mon amour du football. J'aspire à travailler dans le domaine de la Data Science appliquée au sport, en aidant les clubs et les organisations à améliorer leurs performances grâce à l'analyse de données.
-            </p>
-            <p>
-                En dehors des données, j'aime me plonger dans les stratégies sportives, suivre les championnats de football, et explorer de nouvelles technologies pour enrichir mes compétences.
-            </p>
-        </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Programming: Python, R, SQL</li>
+            <li>Data Analysis: Cleaning, Visualization, Modeling</li>
+            <li>Tools: Git, Power BI, Tableau</li>
+        </ul>
+    </section>
 
-        <section id="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>Programming: Python, R, SQL</li>
-                <li>Data Analysis: Cleaning, Visualization, Modeling</li>
-                <li>Tools: Git, Power BI, Tableau</li>
-            </ul>
-        </section>
+    <section id="experience">
+        <h2>Experiences</h2>
+        <p>Details about internships, projects, or jobs...</p>
+    </section>
 
-        <section id="experience">
-            <h2>Experiences</h2>
-            <p>Details about internships, projects, or jobs...</p>
-        </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: ethan.lavogez.etu@univ-lille.fr</p>
+    </section>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Email: ethan.lavogez.etu@univ-lille.fr</p>
-        </section>
-    </main>
-    <footer>
-        <p>© 2024 Ethan Lavogez</p>
-    </footer>
     <script src="script.js"></script>
 </body>
 </html>
