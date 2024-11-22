@@ -3,6 +3,10 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    /*overflow: hidden; Empêche le défilement 
+    height: 100%;  Prend toute la hauteur de la fenêtre 
+    display: flex;
+    flex-direction: column;*/
     background-color: #fff;
     color: #333;
 }
@@ -12,9 +16,14 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    /*width: 100%;
+    height: 100%; Remplit toute la hauteur de la fenêtre */
+    background-color: #f4f4f4;
     padding: 20px;
     position: relative;
 }
+
+/* Navigation styles */
 
 nav {
     position: absolute;
@@ -24,14 +33,10 @@ nav {
 
 nav ul {
     list-style: none;
-    margin: 0;
+    /*margin: 0;*/
     padding: 0;
     display: flex;
     gap: 20px;
-}
-
-nav ul li {
-    margin: 0;
 }
 
 nav ul li a {
@@ -45,48 +50,53 @@ nav ul li a:hover {
     color: #555;
 }
 
-/* Intro container */
+section {
+    display: none; /* Par défaut, les sections sont masquées */
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+section.active {
+    display: block; /* Affiche uniquement la section active */
+}
+
+/* Intro styles */
 .intro-container {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100%;
     width: 100%;
     max-width: 1200px;
-    margin: 50px auto;
-    padding: 20px;
+    margin: auto;
+    text-align: left;
+    /*padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: #fff;
-    border-radius: 8px;
+    border-radius: 8px;*/
 }
 
 /* Photo styles */
 .photo-container img {
-    max-width: 250px;
+    max-width: 300px;
     border-radius: 50%;
     margin-right: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Text styles */
-.text-container {
-    flex: 1;
-    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .text-container h1 {
     font-size: 2.5em;
     margin: 0;
-    color: #333;
+    /*color: #333;*/
 }
 
 .text-container p {
     font-size: 1.2em;
     margin: 10px 0;
-    color: #555;
+    /*color: #555;*/
 }
 
 .text-container .btn {
-    display: inline-block;
+    /*display: inline-block;*/
     padding: 10px 20px;
     background: #333;
     color: white;
@@ -98,4 +108,14 @@ nav ul li a:hover {
 
 .text-container .btn:hover {
     background: #555;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }

@@ -20,16 +20,21 @@
         </div>        
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#" data-section="home">Home</a></li>
+                <li><a href="#" data-section="about">About Me</a></li>
+                <li><a href="#" data-section="skills">Skills</a></li>
+                <li><a href="#" data-section="experience">Experience</a></li>
+                <li><a href="#" data-section="contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
+        <section id="home" class="active">
+            <h2>Welcome to my portfolio</h2>
+            <p>This is the homepage</p>
+        </section>
+
         <section id="about">
             <h2>About Me</h2>
             <p>
@@ -65,6 +70,7 @@
     <footer>
         <p>© 2024 Ethan Lavogez</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
 
