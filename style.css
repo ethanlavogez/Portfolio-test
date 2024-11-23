@@ -7,112 +7,40 @@ body {
     color: #333;
 }
 
+/* Header */
 header {
     background-color: #fff;
-    border-bottom: 2px solid #ddd;
-    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
 }
 
 header h1 {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     font-weight: bold;
-    color: #333;
-    margin: 0;
+    margin-bottom: 0;
 }
 
 header p {
-    font-size: 1.2rem;
-    color: #666;
+    font-size: 1rem;
     margin: 0;
+    color: #666;
 }
 
-/* Navigation Menu */
-.nav-tabs {
-    border-bottom: 2px solid #ddd;
-}
-
+/* Navigation Tabs */
 .nav-tabs .nav-link {
     font-size: 1rem;
     color: #333;
-    padding: 10px 15px;
     transition: color 0.3s, background-color 0.3s;
 }
 
 .nav-tabs .nav-link:hover {
-    background-color: #f5f5f5;
     color: #007bff;
 }
 
 .nav-tabs .nav-link.active {
     color: #fff;
     background-color: #007bff;
-    border-color: #ddd #ddd #fff;
 }
 
-/* Tab Content */
-.tab-content {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 20px;
-    margin-top: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.tab-pane h2 {
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 15px;
-}
-
-.tab-pane p,
-.tab-pane ul {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #555;
-}
-
-.tab-pane ul {
-    padding-left: 20px;
-}
-
-.tab-pane ul li {
-    margin-bottom: 10px;
-}
-
-/* Footer */
-footer {
-    background-color: #f5f5f5;
-    color: #666;
-    text-align: center;
-    padding: 15px 0;
-    font-size: 0.9rem;
-    border-top: 2px solid #ddd;
-}
-
-/* Image (for potential use in sections) */
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2rem;
-    }
-
-    .nav-tabs .nav-link {
-        font-size: 0.9rem;
-        padding: 8px 10px;
-    }
-
-    .tab-pane h2 {
-        font-size: 1.5rem;
-    }
-}
 
 
 
