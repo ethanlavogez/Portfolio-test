@@ -8,9 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const targetSection = this.getAttribute('data-section');
 
             // Masquer toutes les sections
-            sections.forEach(section => {
-                section.classList.remove('active');
-            });
+            sections.forEach(section => section.classList.remove('active'));
 
             // Afficher la section ciblée
             const sectionToShow = document.getElementById(targetSection);
