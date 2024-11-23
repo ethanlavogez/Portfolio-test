@@ -4,71 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Ethan Lavogez</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation Menu -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#" data-section="home">Home</a></li>
-                <li><a href="#" data-section="about">About Me</a></li>
-                <li><a href="#" data-section="skills">Skills</a></li>
-                <li><a href="#" data-section="experience">Experience</a></li>
-                <li><a href="#" data-section="contact">Contact</a></li>
-            </ul>
-        </nav>
+    <header class="bg-light p-3">
+        <div class="container">
+            <h1 class="text-center">Ethan Lavogez</h1>
+            <p class="text-center">Student in Healthcare Data Science</p>
+        </div>
     </header>
 
-    <!-- Home Section -->
-    <section id="home" class="active">
-        <div class="intro-container">
-            <div class="text-container">
-                <p>Hello, my name is</p>
-                <h1>Ethan Lavogez</h1>
-                <p>Student in Healthcare Data Science</p>
-            </div>
-            <div class="image-content">
-                <img src="assets/photo.jpg" alt="Photo de profil">
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            Bonjour et bienvenue sur mon portfolio ! Je m'appelle <strong>Ethan Lavogez</strong>, étudiant en Master Data Science, avec une formation initiale en Sciences pour la Santé. Je suis passionné par l'analyse de données et les technologies, et je souhaite appliquer mes compétences pour résoudre des problèmes complexes dans des domaines tels que la santé et le football, ma passion de toujours.
-        </p>
-        <p>
-            Mon objectif est de combiner ma passion pour les données avec mon amour du football. J'aspire à travailler dans le domaine de la Data Science appliquée au sport, en aidant les clubs et les organisations à améliorer leurs performances grâce à l'analyse de données.
-        </p>
-        <p>
-            En dehors des données, j'aime me plonger dans les stratégies sportives, suivre les championnats de football, et explorer de nouvelles technologies pour enrichir mes compétences.
-        </p>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Programming: Python, R, SQL</li>
-            <li>Data Analysis: Cleaning, Visualization, Modeling</li>
-            <li>Tools: Git, Power BI, Tableau</li>
+    <nav>
+        <ul class="nav nav-tabs justify-content-center mt-4" id="portfolioTabs" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="about-tab" data-bs-toggle="tab" href="#about" role="tab" aria-controls="about" aria-selected="false">About Me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="skills-tab" data-bs-toggle="tab" href="#skills" role="tab" aria-controls="skills" aria-selected="false">Skills</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="experience-tab" data-bs-toggle="tab" href="#experience" role="tab" aria-controls="experience" aria-selected="false">Experience</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="contact-tab" data-bs-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+            </li>
         </ul>
-    </section>
+    </nav>
 
-    <!-- Experience Section -->
-    <section id="experience">
-        <h2>Experience</h2>
-        <p>Details about internships, projects, or jobs...</p>
-    </section>
+    <div class="tab-content container mt-4">
+        <!-- Home Section -->
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <h2>Welcome to My Portfolio</h2>
+            <p>This is the home section where you can find a brief introduction.</p>
+        </div>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: ethan.lavogez.etu@univ-lille.fr</p>
-    </section>
+        <!-- About Section -->
+        <div class="tab-pane fade" id="about" role="tabpanel" aria-labelledby="about-tab">
+            <h2>About Me</h2>
+            <p>I am Ethan Lavogez, a passionate student in Healthcare Data Science...</p>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="tab-pane fade" id="skills" role="tabpanel" aria-labelledby="skills-tab">
+            <h2>Skills</h2>
+            <ul>
+                <li>Programming: Python, R, SQL</li>
+                <li>Data Analysis: Cleaning, Visualization, Modeling</li>
+                <li>Tools: Git, Power BI, Tableau</li>
+                <li>Project Management: Agile, Collaborative Work</li>
+            </ul>
+        </div>
+
+        <!-- Experience Section -->
+        <div class="tab-pane fade" id="experience" role="tabpanel" aria-labelledby="experience-tab">
+            <h2>Experience</h2>
+            <p>Details about my professional experiences...</p>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+            <h2>Contact</h2>
+            <p>Email: ethan.lavogez.etu@univ-lille.fr</p>
+            <p>LinkedIn: <a href="www.linkedin.com/in/ethan-lavogez-b85a59291">My LinkedIn</a></p>
+        </div>
+    </div>
+
+    <footer class="bg-light text-center p-3 mt-5">
+        <p>© 2024 Ethan Lavogez. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
