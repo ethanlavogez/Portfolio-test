@@ -41,6 +41,11 @@ header p {
     background-color: #007bff;
 }
 
+.profile-img {
+    max-width: 70%; /* Ajustez cette valeur pour la taille de l'image */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre douce */
+}
 
 
 
