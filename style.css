@@ -63,12 +63,12 @@ header p {
 }
 
 /* Skills Section */
-.skills-container {
+.Skills-container {
     text-align: center; /* Centre tout le contenu */
     padding: 40px 20px;
 }
 
-.skills-title {
+.Skills-title {
     font-size: 5rem; /* Taille importante pour "Skills" */
     color: #b22222; /* Rouge vintage */
     font-family: 'Courier New', Courier, monospace; /* Police vintage */
@@ -76,7 +76,7 @@ header p {
     margin-bottom: 40px; /* Espacement sous le titre */
 }
 
-.skills-bubbles {
+.Skills-bubbles {
     display: flex;
     flex-wrap: wrap; /* Les bulles s'adaptent à la largeur */
     justify-content: center; /* Centre les bulles */
