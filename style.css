@@ -62,32 +62,22 @@ header p {
     margin: 0; /* Supprimez les marges par défaut */
 }
 
-/* Forcer la hauteur de la page */
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%; /* Assure que le body occupe la totalité de l'écran */
-    overflow: hidden; /* Empêche le défilement */
-}
-
 /* Skills Section */
 .Skills-container {
+    height: 100vh; /* Occupe toute la hauteur de la fenêtre */
+    overflow: hidden; /* Désactive le défilement dans cette section */
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    min-height: 100vh; /* Assure que la section occupe toute la hauteur de la fenêtre */
-    padding: 0;
-    margin: 0;
+    justify-content: flex-start; /* Aligne les éléments vers le haut */
+    padding-top: 50px; /* Ajoute un espacement au-dessus */
 }
 
 .Skills-title {
-    font-size: 7rem;
-    color: #b30000; /* Rouge foncé */
+    font-size: 6rem;
+    color: #b22222; /* Rouge foncé */
     font-family: 'Courier New', Courier, monospace; /* Police vintage */
     margin-bottom: 30px;
-    text-align: center;
-    transition: transform 0.3s ease-in-out;
 }
 
 /* Effet de hover sur Skills */
@@ -95,22 +85,30 @@ html, body {
     transform: scale(1.1);
 }
 
+
+/* Positionnement des bulles pour éviter tout chevauchement */
+.Skills-bubbles {
+    display: flex;
+    flex-wrap: wrap; /* Permet de passer à la ligne si nécessaire */
+    justify-content: center;
+    gap: 20px; /* Espacement uniforme entre les bulles */
+    max-width: 80%; /* Limite la largeur des bulles */
+}
+
 /* Bulles */
 .bubble {
-    background-color: #fff;
-    border-radius: 50px;
     padding: 10px 20px;
+    background-color: #f9f9f9;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
     font-size: 1.2rem;
-    color: #333;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    display: inline-block;
-    margin: 15px;
-    transition: color 0.3s, background-color 0.3s, transform 0.3s;
+    text-align: center;
 }
 
 /* Hover effect on bubbles */
 .bubble:hover {
-    background-color: #b30000; /* Même rouge que Skills */
+    background-color: #b22222; /* Même rouge que Skills */
     color: #fff; /* Texte en blanc */
     transform: scale(1.1);
 }
