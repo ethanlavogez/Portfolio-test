@@ -307,9 +307,14 @@ footer {
 }
 
 .contact-icon {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 1rem;
+    width: 80px; /* Augmentez la largeur */
+    height: 50px; /* Augmentez la hauteur */
+    margin-bottom: 1.5rem; /* Ajustez l'espacement */
+    transition: transform 0.3s ease; /* Ajout d'une légère animation */
+}
+
+.contact-card:hover .contact-icon {
+    transform: scale(1.2); /* Agrandit légèrement le logo au survol */
 }
 
 .contact-card p {
