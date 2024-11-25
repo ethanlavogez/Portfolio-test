@@ -271,3 +271,62 @@ footer {
     font-size: 0.9rem;
     border-top: 2px solid #ddd;
 }
+
+/* Section Contact */
+.contact-title h1 {
+    font-size: 3rem;
+    text-align: center;
+    color: #333;
+    font-family: 'Georgia', serif;
+    margin-bottom: 2rem;
+}
+
+/* Contact Cards */
+.contact-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+
+.contact-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 1.5rem;
+    width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 1rem;
+}
+
+.contact-card p {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 0;
+}
+
+.contact-card a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-cards {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}
