@@ -1,16 +1,73 @@
+/* Déclaration des variables CSS pour les couleurs */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #b22222;
+    --light-bg: #f9f9f9;
+    --dark-bg: #121212;
+    --dark-content: #1e1e1e;
+    --text-light: #f5f5f5;
+    --text-dark: #333;
+    --highlight-dark: #444;
+}
+
 /* Global Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+    background-color: var(--light-bg);
     margin: 0;
     padding: 0;
-    color: #333;
+    color: var(--text-dark);
+    transition: background-color 0.3s, color 0.3s; border-color: 0.3s, box-shadow 0.3s;
+}
+
+/* Mode sombre */
+body.dark-mode {
+    background-color: var(--dark-bg);
+    color: var(--text-light);
+}
+
+body.dark-mode h1, body.dark-mode h2, body.dark-mode h3, body.dark-mode p {
+    color: var(--text-light);
+}
+
+body.dark-mode .section-content {
+    background-color: var(--dark-content);
+    color: var(--text-light);
+}
+
+body.dark-mode .timeline-item::before,
+body.dark-mode .formation-card::before {
+    background-color: var(--highlight-dark);
+}
+
+body.dark-mode .bubble,
+body.dark-mode .contact-card {
+    background-color: var(--highlight-dark);
+    color: var(--text-light);
+}
+
+body.dark-mode .bubble:hover,
+body.dark-mode .contact-card:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+body.dark-mode .header, 
+body.dark-mode .footer, 
+body.dark-mode .navbar {
+    background-color: var(--dark-content);
+    color: var(--text-light);
 }
 
 /* Header */
 header {
-    background-color: #fff;
-    border-bottom: 1px solid #ddd;
+    background-color: var(--light-bg);
+    padding: 1rem 0;
+}
+
+body.dark-mode header {
+    background-color: var(--dark-content);
+    border-color: var(--highlight-dark);
 }
 
 header h1 {
@@ -28,23 +85,43 @@ header p {
 /* Navigation Tabs */
 .nav-tabs .nav-link {
     font-size: 1rem;
-    color: #333;
+    color: var(--text-dark);
     transition: color 0.3s, background-color 0.3s;
 }
 
 .nav-tabs .nav-link:hover {
-    color: #007bff;
+    color: var(--primary-color);
 }
 
 .nav-tabs .nav-link.active {
     color: #fff;
-    background-color: #007bff;
+    background-color: var(--primary-color);
+}
+
+body.dark-mode .nav-tabs .nav-link {
+    color: var(--text-light);
+}
+
+body.dark-mode .nav-tabs .nav-link.active {
+    background-color: var(--primary-color);
 }
 
 .profile-img {
     max-width: 70%; /* Ajustez cette valeur pour la taille de l'image */
     border-radius: 10px; /* Coins arrondis */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre douce */
+}
+
+/* Sections générales */
+.section-content {
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    background-color: var(--light-bg);
+}
+
+body.dark-mode .section-content {
+    background-color: var(--dark-content);
 }
 
 /* About Me Section */
@@ -55,7 +132,7 @@ header p {
 
 .about-title {
     font-size: 5rem; /* Taille plus grande */
-    color: #b22222; /* Rouge vintage */
+    color: var(--secondary-color); /* Rouge vintage */
     font-family: 'Courier New', Courier, monospace; /* Police vintage */
     font-weight: bold; /* Mettre en gras */
     line-height: 1.1; /* Réduction de l'espacement entre les lignes */
@@ -65,7 +142,6 @@ header p {
 /* Skills Section */
 .Skills-container {
     height: 100vh; /* Occupe toute la hauteur de la fenêtre */
-    overflow: hidden; /* Désactive le défilement dans cette section */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -77,9 +153,10 @@ header p {
 
 .Skills-title {
     font-size: 6rem;
-    color: #b22222; /* Rouge foncé */
+    color: var(--secondary-color); /* Rouge foncé */
     font-family: 'Lobster', cursive; /* Police vintage */
     margin-bottom: 30px;
+    transition: transform 0.3s;
 }
 
 /* Effet de hover sur Skills */
@@ -100,7 +177,7 @@ header p {
 /* Bulles */
 .bubble {
     padding: 10px 20px;
-    background-color: #f9f9f9;
+    background-color: var(--light-bg);
     border-radius: 50px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s, transform 0.3s;
@@ -110,7 +187,7 @@ header p {
 
 /* Hover effect on bubbles */
 .bubble:hover {
-    background-color: #b22222; /* Même rouge que Skills */
+    background-color: var(--secondary-color); /* Même rouge que Skills */
     color: #fff; /* Texte en blanc */
     transform: scale(1.1);
 }
@@ -118,7 +195,7 @@ header p {
 /* Section Experiences */
 .experience-title {
     font-size: 3rem;
-    color: #333;
+    color: var(--text-dark);
     text-align: center;
     margin-bottom: 2rem;
     font-family: 'Georgia', serif;
@@ -143,7 +220,7 @@ header p {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #007bff;
+    background-color: var(--primary-color);
     color: #fff;
     text-align: center;
     line-height: 40px;
@@ -164,7 +241,7 @@ header p {
 }
 
 .timeline-content {
-    background: #f9f9f9;
+    background: var(--light-bg);
     padding: 1rem;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -174,7 +251,7 @@ header p {
 .timeline-content h3 {
     margin-top: 0;
     font-size: 1.5rem;
-    color: #007bff;
+    color: var(--primary-color);
 }
 
 .timeline-content p,
@@ -194,11 +271,21 @@ header p {
     margin-bottom: 1rem;
 }
 
+/* Adaptation pour le mode sombre */
+body.dark-mode .timeline-content p,
+body.dark-mode .timeline-content ul {
+    color: #e5e5e5; /* Couleur plus claire pour le texte */
+}
+
+body.dark-mode .experience-logo {
+    filter: brightness(0.8); /* Rendre les logos plus sombres pour s'adapter */
+}
+
 /* Section Formation */
 .formation-title h1 {
     font-size: 3rem;
     text-align: center;
-    color: #333;
+    color: var(--text-dark);
     font-family: 'Georgia', serif;
     margin-bottom: 2rem;
 }
@@ -214,7 +301,7 @@ header p {
 }
 
 .formation-card {
-    background-color: #f9f9f9;
+    background-color: var(--light-bg);
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 1.5rem;
@@ -236,7 +323,7 @@ header p {
 
 .formation-card h3 {
     font-size: 1.5rem;
-    color: #007bff;
+    color: var(--primary-color);
     margin: 0.5rem 0;
 }
 
@@ -264,7 +351,7 @@ header p {
 
 /* Footer */
 footer {
-    background-color: #f5f5f5;
+    background-color: var(--text-light);
     color: #666;
     text-align: center;
     padding: 15px 0;
@@ -276,7 +363,7 @@ footer {
 .contact-title h1 {
     font-size: 3rem;
     text-align: center;
-    color: #333;
+    color: var(--text-dark);
     font-family: 'Georgia', serif;
     margin-bottom: 2rem;
 }
@@ -292,7 +379,7 @@ footer {
 }
 
 .contact-card {
-    background-color: #f9f9f9;
+    background-color: var(--light-bg);
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -308,7 +395,7 @@ footer {
 
 .contact-icon {
     width: 80px; /* Augmentez la largeur */
-    height: 50px; /* Augmentez la hauteur */
+    height: auto; /* Augmentez la hauteur */
     margin-bottom: 1.5rem; /* Ajustez l'espacement */
     transition: transform 0.3s ease; /* Ajout d'une légère animation */
 }
@@ -319,13 +406,17 @@ footer {
 
 .contact-card p {
     font-size: 1.2rem;
-    color: #333;
+    color: var(--text-dark);
     margin: 0;
 }
 
 .contact-card a {
     text-decoration: none;
     color: inherit;
+}
+
+.contact-card a:hover {
+    color: #007bff; /* Change la couleur du lien au survol */
 }
 
 /* Responsive Design */
@@ -335,49 +426,3 @@ footer {
         gap: 1.5rem;
     }
 }
-
-/* Par défaut (mode clair) */
-body {
-    background-color: #fff;
-    color: #333;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.header, .section-content {
-    background-color: #f9f9f9;
-}
-
-/* Mode sombre */
-body.dark-mode {
-    background-color: #121212;
-    color: #f5f5f5;
-}
-
-body.dark-mode .header, body.dark-mode .section-content {
-    background-color: #1e1e1e;
-}
-
-/* Bouton de bascule */
-.theme-toggle {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
-    font-size: 1.5rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.theme-toggle .icon-light {
-    display: none;
-}
-
-body.dark-mode .theme-toggle .icon-light {
-    display: inline;
-}
-
-body.dark-mode .theme-toggle .icon-dark {
-    display: none;
-}
-
