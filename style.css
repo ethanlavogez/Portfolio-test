@@ -63,7 +63,7 @@ header p {
 }
 
 /* Skills Section */
-.skills-container {
+.Skills-container {
     position: relative;
     height: 100vh; /* Occupe tout l'écran */
     display: flex;
@@ -73,16 +73,17 @@ header p {
     text-align: center;
 }
 
-.skills-title {
+.Skills-title {
     font-size: 10rem;
     color: #b30000; /* Rouge foncé */
     font-family: 'Courier New', Courier, monospace; /* Police vintage */
     margin-bottom: 30px;
+    text-align: center;
     transition: transform 0.3s ease-in-out;
 }
 
 /* Effet de hover sur Skills */
-.skills-title:hover {
+.Skills-title:hover {
     transform: scale(1.1);
 }
 
