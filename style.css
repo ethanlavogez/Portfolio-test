@@ -64,43 +64,66 @@ header p {
 
 /* Skills Section */
 .Skills-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
     text-align: center; /* Centre tout le contenu */
-    padding: 40px 20px;
 }
 
 .Skills-title {
-    font-size: 5rem; /* Taille importante pour "Skills" */
-    color: #b22222; /* Rouge vintage */
-    font-family: 'Courier New', Courier, monospace; /* Police vintage */
-    font-weight: bold;
-    margin-bottom: 40px; /* Espacement sous le titre */
+    font-family: 'Pacifico', cursive; /* Police vintage */
+    font-size: 5rem; /* Plus grand pour accentuer */
+    color: #d32f2f; /* Rouge vif */
+    margin: 0;
+    z-index: 2;
 }
 
-.Skills-bubbles {
-    display: flex;
-    flex-wrap: wrap; /* Les bulles s'adaptent à la largeur */
-    justify-content: center; /* Centre les bulles */
-    gap: 20px; /* Espacement entre les bulles */
-    max-width: 800px; /* Largeur maximale pour les bulles */
-    margin: 0 auto; /* Centrage horizontal */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 0 50px;
+    align-items: center;
+    justify-items: center;
 }
 
 .bubble {
-    display: inline-block;
-    background-color: #f0f0f0; /* Couleur de fond des bulles */
-    color: #333; /* Couleur du texte */
-    font-family: Arial, sans-serif; /* Police différente de "Skills" */
-    font-size: 1rem; /* Taille plus petite */
-    padding: 15px 20px; /* Espacement interne */
-    border-radius: 50px; /* Forme arrondie */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre douce */
-    transition: transform 0.3s, background-color 0.3s; /* Animation */
+    background-color: #f5f5f5;
+    color: #333;
+    padding: 15px 20px;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1.2rem;
+    transition: transform 0.3s, background-color 0.3s;
+    text-align: center;
 }
 
 .bubble:hover {
     transform: scale(1.1); /* Agrandissement au survol */
-    background-color: #b22222; /* Fond rouge au survol */
-    color: #fff; /* Texte blanc au survol */
+    background-color: #e0e0e0; /* Fond rouge au survol */
 }
 
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .skills-title {
+        font-size: 3rem;
+    }
 
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        gap: 15px;
+    }
+
+    .bubble {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+}
