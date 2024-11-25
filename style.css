@@ -195,84 +195,72 @@ header p {
 }
 
 /* Section Formation */
-.formation-title {
+.formation-title h1 {
     font-size: 3rem;
-    color: #333;
     text-align: center;
-    margin-bottom: 2rem;
+    color: #333;
     font-family: 'Georgia', serif;
+    margin-bottom: 2rem;
 }
 
 /* Timeline */
-.timeline {
-    position: relative;
-    margin: 0 auto;
-    padding: 2rem 0;
-    width: 80%;
-}
-
-.timeline-item {
+.formation-timeline {
     display: flex;
-    margin-bottom: 2rem;
+    justify-content: center;
     align-items: flex-start;
+    gap: 2rem;
+    overflow-x: auto; /* Permet le défilement horizontal si les cartes débordent */
+    padding: 2rem 0;
+}
+
+.formation-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    width: 300px;
+    text-align: center;
     position: relative;
 }
 
-.circle {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #007bff;
-    color: #fff;
-    text-align: center;
-    line-height: 40px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-right: 20px;
-}
-
-.timeline-item::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 20px;
-    width: 2px;
-    height: 100%;
-    background-color: #ddd;
-    z-index: -1;
-}
-
-.timeline-content {
-    background: #f9f9f9;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: calc(100% - 60px);
-}
-
-.timeline-content h3 {
-    margin-top: 0;
-    font-size: 1.5rem;
-    color: #007bff;
-}
-
-.timeline-content p,
-.timeline-content ul {
-    margin: 0.5rem 0;
-    font-size: 1rem;
-    color: #555;
-}
-
-.timeline-content ul {
-    padding-left: 20px;
+.formation-card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s ease-in-out;
 }
 
 .formation-logo {
-    width: 60px;
+    width: 80px;
     height: auto;
     margin-bottom: 1rem;
 }
 
+.formation-card h3 {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin: 0.5rem 0;
+}
+
+.formation-card p {
+    font-size: 1rem;
+    color: #555;
+    margin: 0.5rem 0;
+}
+
+/* Connectors */
+.formation-card::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -20px; /* Adjust depending on spacing */
+    width: 20px;
+    height: 2px;
+    background-color: #ddd;
+    z-index: -1;
+}
+
+.formation-card:first-child::before {
+    display: none; /* Remove connector for the first card */
+}
 
 /* Footer */
 footer {
