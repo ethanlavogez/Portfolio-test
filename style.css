@@ -73,10 +73,12 @@ header p {
     padding-top: 50px; /* Ajoute un espacement au-dessus */
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap'); /* Importez la police Lobster */
+
 .Skills-title {
     font-size: 6rem;
     color: #b22222; /* Rouge foncé */
-    font-family: 'Courier New', Courier, monospace; /* Police vintage */
+    font-family: 'Lobster', cursive; /* Police vintage */
     margin-bottom: 30px;
 }
 
