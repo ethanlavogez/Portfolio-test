@@ -64,46 +64,43 @@ header p {
 
 /* Skills Section */
 .skills-container {
-    position: relative;
-    height: 100vh; /* Occupe tout l'écran */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
+    text-align: center; /* Centre tout le contenu */
+    padding: 40px 20px;
 }
 
 .skills-title {
-    font-size: 7rem;
-    color: #b30000; /* Rouge foncé */
+    font-size: 5rem; /* Taille importante pour "Skills" */
+    color: #b22222; /* Rouge vintage */
     font-family: 'Courier New', Courier, monospace; /* Police vintage */
-    margin-bottom: 30px;
-    transition: transform 0.3s ease-in-out;
+    font-weight: bold;
+    margin-bottom: 40px; /* Espacement sous le titre */
 }
 
-/* Effet de hover sur Skills */
-.skills-title:hover {
-    transform: scale(1.1);
+.skills-bubbles {
+    display: flex;
+    flex-wrap: wrap; /* Les bulles s'adaptent à la largeur */
+    justify-content: center; /* Centre les bulles */
+    gap: 20px; /* Espacement entre les bulles */
+    max-width: 800px; /* Largeur maximale pour les bulles */
+    margin: 0 auto; /* Centrage horizontal */
 }
 
-/* Bulles */
 .bubble {
-    background-color: #fff;
-    border-radius: 50px;
-    padding: 10px 20px;
-    font-size: 1.2rem;
-    color: #333;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     display: inline-block;
-    margin: 15px;
-    transition: color 0.3s, background-color 0.3s, transform 0.3s;
+    background-color: #f0f0f0; /* Couleur de fond des bulles */
+    color: #333; /* Couleur du texte */
+    font-family: Arial, sans-serif; /* Police différente de "Skills" */
+    font-size: 1rem; /* Taille plus petite */
+    padding: 15px 20px; /* Espacement interne */
+    border-radius: 50px; /* Forme arrondie */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre douce */
+    transition: transform 0.3s, background-color 0.3s; /* Animation */
 }
 
-/* Hover effect on bubbles */
 .bubble:hover {
-    background-color: #b30000; /* Même rouge que Skills */
-    color: #fff; /* Texte en blanc */
-    transform: scale(1.1);
+    transform: scale(1.1); /* Agrandissement au survol */
+    background-color: #b22222; /* Fond rouge au survol */
+    color: #fff; /* Texte blanc au survol */
 }
 
 /* Footer */
