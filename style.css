@@ -96,16 +96,3 @@ header p {
     background-color: #e0e0e0;
 }
 
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    .skills-title {
-        font-size: 4rem;
-    }
-
-    .bubble {
-        font-size: 1rem;
-        padding: 10px 15px;
-        margin: 10px;
-    }
-}
-
