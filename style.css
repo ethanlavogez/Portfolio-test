@@ -65,33 +65,34 @@ header p {
 /* Skills Section */
 .Skills-container {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
     position: relative;
     text-align: center; /* Centre tout le contenu */
+    width: 100%;
+    overflow: hidden;
 }
 
 .Skills-title {
     font-family: 'Pacifico', cursive; /* Police vintage */
-    font-size: 5rem; /* Plus grand pour accentuer */
+    font-size: 6rem; /* Plus grand pour accentuer */
     color: #d32f2f; /* Rouge vif */
     margin: 0;
     z-index: 2;
+    position: absolute;
 }
 
 .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 20px;
     position: absolute;
     width: 100%;
     height: 100%;
-    padding: 0 50px;
-    align-items: center;
-    justify-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Répartit uniformément */
+    align-items: center; /* Centré verticalement */
+    padding: 20px;
+    z-index: 1;
 }
 
 .bubble {
@@ -101,6 +102,8 @@ header p {
     border-radius: 50px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     font-size: 1.2rem;
+    margin: 15px; /* Ajoute de l'espace entre les bulles */
+    white-space: nowrap; /* Empêche la coupure du texte */
     transition: transform 0.3s, background-color 0.3s;
     text-align: center;
 }
@@ -113,17 +116,16 @@ header p {
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     .skills-title {
-        font-size: 3rem;
+        font-size: 4rem;
     }
 
     .skills-grid {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto;
-        gap: 15px;
+        padding: 10px;
     }
 
     .bubble {
         font-size: 1rem;
         padding: 10px 15px;
+        margin: 10px;
     }
 }
