@@ -328,6 +328,31 @@ footer {
     color: inherit;
 }
 
+/* Styles pour délimiter chaque section */
+
+/* Fond pour le contenu central de chaque section */
+.section-content {
+    background-color: #ffffff; /* Blanc pour le contenu principal */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre douce */
+}
+
+/* Fond pour la zone entre les traits horizontaux */
+.section-wrapper {
+    background-color: #f5f5f5; /* Gris clair pour contraste */
+    padding: 3rem 0; /* Espacement haut/bas autour du contenu */
+    border-top: 2px solid #ddd; /* Trait horizontal en haut */
+    border-bottom: 2px solid #ddd; /* Trait horizontal en bas */
+}
+
+/* Pour ajouter une animation ou un effet sur les sections */
+.section-wrapper:hover {
+    background-color: #e9ecef; /* Change légèrement la couleur au survol */
+    transition: background-color 0.3s ease;
+}
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .contact-cards {
