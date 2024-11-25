@@ -62,19 +62,27 @@ header p {
     margin: 0; /* Supprimez les marges par défaut */
 }
 
+/* Forcer la hauteur de la page */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Assure que le body occupe la totalité de l'écran */
+    overflow: hidden; /* Empêche le défilement */
+}
+
 /* Skills Section */
 .Skills-container {
-    position: relative;
-    height: 100vh; /* Occupe tout l'écran */
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    text-align: center;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Assure que la section occupe toute la hauteur de la fenêtre */
+    padding: 0;
+    margin: 0;
 }
 
 .Skills-title {
-    font-size: 10rem;
+    font-size: 7rem;
     color: #b30000; /* Rouge foncé */
     font-family: 'Courier New', Courier, monospace; /* Police vintage */
     margin-bottom: 30px;
