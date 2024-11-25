@@ -71,7 +71,7 @@ header p {
     position: relative;
     text-align: center; /* Centre tout le contenu */
     width: 100%;
-    overflow: hidden;
+    overflow: hidden; /* Supprime le défilement */
 }
 
 .Skills-title {
@@ -79,8 +79,7 @@ header p {
     font-size: 6rem; /* Plus grand pour accentuer */
     color: #d32f2f; /* Rouge vif */
     margin: 0;
-    z-index: 2;
-    position: absolute;
+    z-index: 1;
 }
 
 .skills-grid {
@@ -89,10 +88,12 @@ header p {
     height: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around; /* Répartit uniformément */
+    justify-content: center; /* Répartit uniformément */
     align-items: center; /* Centré verticalement */
-    padding: 20px;
-    z-index: 1;
+    gap: 30px; /* Espace entre les bulles */
+    padding: 50px;
+    z-index: 0;
+    pointer-events: none; /* Empêche de cliquer sur les bulles par erreur */
 }
 
 .bubble {
@@ -102,15 +103,53 @@ header p {
     border-radius: 50px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     font-size: 1.2rem;
-    margin: 15px; /* Ajoute de l'espace entre les bulles */
+    margin: 10px; /* Ajoute de l'espace entre les bulles */
     white-space: nowrap; /* Empêche la coupure du texte */
-    transition: transform 0.3s, background-color 0.3s;
+    transition: transform 0.3s, background-color 0.3s ease;
     text-align: center;
+    z-index: 0;
 }
 
 .bubble:hover {
     transform: scale(1.1); /* Agrandissement au survol */
     background-color: #e0e0e0; /* Fond rouge au survol */
+}
+
+/* Empêche le chevauchement */
+.skills-grid .bubble:nth-child(1) {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.skills-grid .bubble:nth-child(2) {
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translateY(-50%);
+}
+
+.skills-grid .bubble:nth-child(3) {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.skills-grid .bubble:nth-child(4) {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translateY(-50%);
+}
+
+/* Supprime le défilement */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
 }
 
 /* Responsive Adjustments */
