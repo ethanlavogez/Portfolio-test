@@ -74,10 +74,16 @@ header p {
 }
 
 .skills-title {
-    font-size: 6rem;
-    color: #b30000;
-    font-family: 'Courier New', Courier, monospace;
+    font-size: 7rem;
+    color: #b30000; /* Rouge foncé */
+    font-family: 'Courier New', Courier, monospace; /* Police vintage */
     margin-bottom: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Effet de hover sur Skills */
+.skills-title:hover {
+    transform: scale(1.1);
 }
 
 /* Bulles */
@@ -90,6 +96,14 @@ header p {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     display: inline-block;
     margin: 15px;
+    transition: color 0.3s, background-color 0.3s, transform 0.3s;
+}
+
+/* Hover effect on bubbles */
+.bubble:hover {
+    background-color: #b30000; /* Même rouge que Skills */
+    color: #fff; /* Texte en blanc */
+    transform: scale(1.1);
 }
 
 /* Footer */
