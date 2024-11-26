@@ -101,6 +101,11 @@ h2.display-4 {
     background-color: #696969; /* Couleur du bouton au survol */
 }
 
+/* Espace entre photo et phrase*/
+.quote {
+    margin-top: 15px; /* Ajustez la valeur selon vos besoins */
+}
+
 /* About Me Section */
 .about-header {
     text-align: left; /* Aligner le texte à gauche */
