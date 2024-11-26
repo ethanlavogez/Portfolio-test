@@ -81,7 +81,7 @@ section h2 {
 .profile-img {
     border-radius: 50%; /* Pour une image de profil ronde */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre pour faire ressortir l'image */
-    max-width: 80%; /* S'assure que l'image ne déborde pas */
+    max-width: 100%; /* S'assure que l'image ne déborde pas */
     height: auto; /* Maintient le ratio d'aspect */
     margin-top: 0;
 }
@@ -119,6 +119,13 @@ h2.display-4 {
 /* Réduire la marge du contenu de la section principale */
 #main-section .col-md-6 {
     padding-top: 0; /* Supprime le padding supérieur */
+    margin: 0;
+}
+
+/* Ajustements supplémentaires pour les colonnes */
+#main-section .col-md-6 {
+    flex: 1; /* Permet aux colonnes de s'ajuster également */
+    overflow: hidden; /* Empêche le défilement dans cette section */
 }
 
 /* About Me Section */
