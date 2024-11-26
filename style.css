@@ -4,7 +4,7 @@
 body {
     font-family: Arial, sans-serif;
     font-weight: normal;
-    background-color: #F0F0F0;
+    background-color: #d3d3d399;
     margin: 0;
     padding: 0;
     color: #333333;
@@ -12,7 +12,7 @@ body {
 
 /* Header */
 header {
-    background-color: #F0F0F0;
+    background-color: #e71818;
     border-bottom: 1px solid #DDDDDD;
     padding: 20px;
 }
@@ -316,7 +316,7 @@ h2.display-4 {
 
 /* Footer */
 footer {
-    background-color: #333333;
+    background-color: #e61212;
     color: #333333;
     text-align: center;
     padding: 15px 0;
