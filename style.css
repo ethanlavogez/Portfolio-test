@@ -44,6 +44,8 @@ header p {
 .profile-img {
     border-radius: 50%; /* Pour une image de profil ronde */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre pour faire ressortir l'image */
+    max-width: 100%; /* S'assure que l'image ne déborde pas */
+    height: auto; /* Maintient le ratio d'aspect */
 }
 
 h2.display-4 {
