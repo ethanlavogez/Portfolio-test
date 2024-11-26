@@ -116,7 +116,7 @@ h2.display-4 {
 
 .about-container {
     text-align: center;
-    padding: 3rem;
+    padding: 3rem 0;
     background-color: var(--light-bg); /* Ajustez selon votre thème */
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -130,7 +130,7 @@ h2.display-4 {
     font-family: 'Lobster', cursive; 
     font-weight: bold; /* Mettre en gras */
     line-height: 1.2; /* Réduction de l'espacement entre les lignes */
-    margin-bottom: 1rem; 
+    margin-bottom: 1.5rem; 
 
 }
 
@@ -139,7 +139,7 @@ h2.display-4 {
 .about-vision {
     font-size: 1.2rem;
     color: var(--text-dark);
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     line-height: 1.8;
 }
 
@@ -159,6 +159,17 @@ h2.display-4 {
     margin-top: 1rem;
     font-size: 1.2rem;
     text-align: center;
+}
+
+@media (max-width: 768px) {
+    /* Pour les écrans mobiles, affichez le texte et l'image en pile */
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-text {
+        margin-bottom: 2rem;
+    }
 }
 
 /* Skills Section */
