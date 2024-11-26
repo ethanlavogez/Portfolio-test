@@ -16,18 +16,13 @@ body {
     justify-content: center; /* Aligne horizontalement les éléments au centre */
     overflow: hidden; /* Empêche le défilement */
     padding: 0 2rem; /* Ajoute un peu de marge interne */
-}
-
-/* Ajout d'une image de fond optionnelle */
-#Home {
     background: linear-gradient(135deg, #007bff, #f9f9f9); /* Dégradé de fond */
     background-size: cover; /* S'assure que le fond couvre toute la section */
 }
 
-/* Supprimer les marges du corps pour éviter le défilement */
-body {
-    margin: 0;
-    overflow: hidden; /* Empêche le défilement de la page entière */
+/* Réactiver le défilement pour les autres sections */
+.tab-content {
+    overflow-y: auto; /* Autorise le défilement vertical */
 }
 
 /* Titre et texte */
