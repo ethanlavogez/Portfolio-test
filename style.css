@@ -89,7 +89,7 @@ h2.display-4 {
 }
 
 .btn-primary {
-    background-color: #a9a9a9c4; /* Couleur du bouton */
+    background-color: #A9A9A9; /* Couleur du bouton */
     border: none;
     color: #FFFFFF; /* Texte du bouton */
     padding: 10px 20px;
@@ -98,7 +98,7 @@ h2.display-4 {
 }
 
 .btn-primary:hover {
-    background-color: #69696972; /* Couleur du bouton au survol */
+    background-color: #696969; /* Couleur du bouton au survol */
 }
 
 /* About Me Section */
