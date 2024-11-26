@@ -74,7 +74,7 @@ h2.display-4 {
 
 /* Styles spécifiques à la page d'accueil */
 .home {
-    background-color: #F8F9FA; /* Couleur de fond neutre */
+    background-color: #333; /* Couleur de fond neutre */
     color: #212529; /* Couleur du texte principale */
     font-family: 'Arial', sans-serif; /* Typographie professionnelle */
 }
