@@ -15,6 +15,7 @@ header {
     background-color: #c0b1b17d;
     border-bottom: 1px solid #DDDDDD;
     padding: 20px;
+    margin-bottom: 10px;
 }
 
 header h1 {
@@ -82,6 +83,7 @@ section h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre pour faire ressortir l'image */
     max-width: 100%; /* S'assure que l'image ne déborde pas */
     height: auto; /* Maintient le ratio d'aspect */
+    margin-top: 0;
 }
 
 h2.display-4 {
