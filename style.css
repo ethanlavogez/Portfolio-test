@@ -81,7 +81,7 @@ section h2 {
 .profile-img {
     border-radius: 50%; /* Pour une image de profil ronde */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre pour faire ressortir l'image */
-    max-width: 100%; /* S'assure que l'image ne déborde pas */
+    max-width: 80%; /* S'assure que l'image ne déborde pas */
     height: auto; /* Maintient le ratio d'aspect */
     margin-top: 0;
 }
@@ -105,7 +105,17 @@ h2.display-4 {
 
 /* Espace entre photo et phrase*/
 .quote {
-    margin-top: 15px; /* Ajustez la valeur selon vos besoins */
+    margin-top: 20px; /* Ajustez la valeur selon vos besoins */
+}
+
+/* Eviter les espaces et le défilement dans la section home */
+#main-section {
+    height: 100vh; /* Hauteur de la fenêtre */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centre verticalement le contenu */
+    align-items: center; /* Centre horizontalement le contenu */
+    overflow: hidden; /* Empêche le défilement dans cette section */
 }
 
 /* About Me Section */
