@@ -74,16 +74,49 @@ h2.display-4 {
     color: #007bff; /* Couleur personnalisée pour le titre */
 }
 
-.btn-primary {
-    background-color: #FF5733; /* Couleur du bouton */
-    border: none; /* Pas de bordure */
-    color: #FFFFFF;
+/* Styles spécifiques à la page d'accueil */
+.home {
+    background-color: #F8F9FA; /* Couleur de fond neutre */
+    color: #212529; /* Couleur du texte principale */
+    font-family: 'Arial', sans-serif; /* Typographie professionnelle */
+}
+
+/* Titres en noir et blanc */
+.home h1, .home h2, .home h3 {
+    color: #333333; /* Couleur sombre pour les titres */
+}
+
+/* Images en noir et blanc */
+.home img {
+    filter: grayscale(100%); /* Applique un filtre noir et blanc */
+    transition: filter 0.3s; /* Transition douce lors du survol */
+}
+
+.home img:hover {
+    filter: grayscale(0%); /* Restaure la couleur au survol */
+}
+
+/* Liens */
+.home a {
+    color: #007BFF; /* Couleur pour les liens */
+    text-decoration: none; /* Pas de soulignement */
+}
+
+.home a:hover {
+    text-decoration: underline; /* Soulignement au survol */
+}
+
+/* Boutons */
+.home .btn-primary {
+    background-color: #007BFF; /* Couleur du bouton */
+    border: none;
+    color: #FFFFFF; /* Texte du bouton */
     padding: 10px 20px;
     border-radius: 5px;
 }
 
-.btn-primary:hover {
-    background-color: #C0392B; /* Couleur du bouton au survol */
+.home .btn-primary:hover {
+    background-color: #0056b3; /* Couleur du bouton au survol */
 }
 
 /* About Me Section */
