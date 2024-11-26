@@ -15,7 +15,7 @@ header {
     background-color: #c0b1b17d;
     border-bottom: 1px solid #DDDDDD;
     padding: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 0;
 }
 
 header h1 {
@@ -110,12 +110,15 @@ h2.display-4 {
 
 /* Eviter les espaces et le défilement dans la section home */
 #main-section {
-    height: 100vh; /* Hauteur de la fenêtre */
+    height: calc(100vh - 80px); /* Ajustez la hauteur pour compenser l'en-tête */
     display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centre verticalement le contenu */
-    align-items: center; /* Centre horizontalement le contenu */
+    align-items: center; /* Centre verticalement le contenu */
     overflow: hidden; /* Empêche le défilement dans cette section */
+}
+
+/* Réduire la marge du contenu de la section principale */
+#main-section .col-md-6 {
+    padding-top: 0; /* Supprime le padding supérieur */
 }
 
 /* About Me Section */
