@@ -25,6 +25,43 @@ header p {
     color: #666;
 }
 
+/* Styles généraux pour les sections */
+.tab-pane {
+    padding: 2rem; /* Ajoutez un espacement interne */
+    min-height: auto; /* Supprimez les hauteurs fixes */
+    height: auto; /* Permet à la section de s'ajuster à son contenu */
+    overflow: visible; /* Permet d'afficher tout le contenu sans forcer */
+}
+
+/* Ajustement des sections spécifiques */
+#Home {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    height: auto; /* Ajuste automatiquement à son contenu */
+    padding: 3rem 0;
+}
+
+#Skills,
+#Experiences,
+#Formation,
+#Contact {
+    height: auto; /* S'adapte à leur contenu */
+    padding: 3rem 0; /* Ajoute de l'espacement pour éviter les collisions */
+    overflow: visible;
+}
+
+/* Supprimez les styles forcés dans les sections */
+.Skills-container,
+.timeline,
+.formation-timeline,
+.contact-cards {
+    height: auto;
+    overflow: visible;
+}
+
+
 /* Navigation Tabs */
 .nav-tabs .nav-link {
     font-size: 1rem;
