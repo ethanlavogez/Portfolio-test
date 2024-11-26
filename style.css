@@ -4,21 +4,21 @@
 body {
     font-family: Arial, sans-serif;
     font-weight: normal;
-    background-color: #f2f2f2;
+    background-color: #F8F9FA;
     margin: 0;
     padding: 0;
-    color: #333333;
+    color: #212529;
 }
 
 /* Header */
 header {
-    background-color: #003366;
+    background-color: #007BFF;
     color: #ffffff;
     border-bottom: 1px solid #ddd;
 }
 
 header h1 {
-    color: #66CC66;
+    color: #28A745;
     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 0;
@@ -75,13 +75,15 @@ h2.display-4 {
 }
 
 .btn-primary {
-    background-color: #66CC66; /* Couleur du bouton */
+    background-color: #FF5733; /* Couleur du bouton */
     border: none; /* Pas de bordure */
     color: #FFFFFF;
+    padding: 10px 20px;
+    border-radius: 5px;
 }
 
 .btn-primary:hover {
-    background-color: #0056b3; /* Couleur du bouton au survol */
+    background-color: #C0392B; /* Couleur du bouton au survol */
 }
 
 /* About Me Section */
@@ -299,7 +301,7 @@ h2.display-4 {
 
 /* Footer */
 footer {
-    background-color: #003366;
+    background-color: #007BFF;
     color: #FFFFFF;
     text-align: center;
     padding: 15px 0;
