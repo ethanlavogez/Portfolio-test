@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap'); /* Importez la police Lobster */
+
 /* Global Styles */
 body {
     font-family: Arial, sans-serif;
@@ -86,8 +88,6 @@ h2.display-4 {
     justify-content: flex-start; /* Aligne les éléments vers le haut */
     padding-top: 50px; /* Ajoute un espacement au-dessus */
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap'); /* Importez la police Lobster */
 
 .Skills-title {
     font-size: 6rem;
