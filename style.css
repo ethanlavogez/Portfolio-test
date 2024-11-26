@@ -148,7 +148,7 @@ h2.display-4 {
 }
 
 .about-image img {
-    max-width: 30%; /* Ajustez selon la taille de votre image */
+    max-width: 100%; /* Ajustez selon la taille de votre image */
     border-radius: 10px; /* Coins arrondis */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajoute une ombre douce */
 }
