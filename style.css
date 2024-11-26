@@ -2,9 +2,32 @@
 body {
     font-family: Arial, sans-serif;
     background-color: linear-gradient(135deg, #007bff, #f9f9f9);
+    background-size: cover; /* S'assure que le fond couvre toute la section */
     margin: 0;
     padding: 0;
     color: #333;
+}
+
+/* Pour que la section Home occupe toute la hauteur de la fenêtre */
+#Home {
+    height: 100vh; /* Hauteur égale à la hauteur visible de la fenêtre */
+    display: flex; /* Permet un alignement flexible */
+    align-items: center; /* Aligne verticalement les éléments au centre */
+    justify-content: center; /* Aligne horizontalement les éléments au centre */
+    overflow: hidden; /* Empêche le défilement */
+    padding: 0 2rem; /* Ajoute un peu de marge interne */
+}
+
+/* Ajout d'une image de fond optionnelle */
+#Home {
+    background: linear-gradient(135deg, #007bff, #f9f9f9); /* Dégradé de fond */
+    background-size: cover; /* S'assure que le fond couvre toute la section */
+}
+
+/* Supprimer les marges du corps pour éviter le défilement */
+body {
+    margin: 0;
+    overflow: hidden; /* Empêche le défilement de la page entière */
 }
 
 /* Titre et texte */
