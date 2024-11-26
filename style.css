@@ -108,26 +108,6 @@ h2.display-4 {
     margin-top: 20px; /* Ajustez la valeur selon vos besoins */
 }
 
-/* Eviter les espaces et le défilement dans la section home */
-#main-section {
-    height: calc(100vh - 80px); /* Ajustez la hauteur pour compenser l'en-tête */
-    display: flex;
-    align-items: center; /* Centre verticalement le contenu */
-    overflow: hidden; /* Empêche le défilement dans cette section */
-}
-
-/* Réduire la marge du contenu de la section principale */
-#main-section .col-md-6 {
-    padding-top: 0; /* Supprime le padding supérieur */
-    margin: 0;
-}
-
-/* Ajustements supplémentaires pour les colonnes */
-#main-section .col-md-6 {
-    flex: 1; /* Permet aux colonnes de s'ajuster également */
-    overflow: hidden; /* Empêche le défilement dans cette section */
-}
-
 /* About Me Section */
 .about-header {
     text-align: left; /* Aligner le texte à gauche */
