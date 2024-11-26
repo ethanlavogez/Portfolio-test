@@ -1,10 +1,29 @@
 /* Global Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+    background-color: linear-gradient(135deg, #007bff, #f9f9f9);
     margin: 0;
     padding: 0;
     color: #333;
+}
+
+/* Titre et texte */
+h2.display-5 {
+    font-family: 'Lobster', cursive; /* Téléchargez et liez cette police via Google Fonts */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    font-size: 3rem;
+    color: #333;
+}
+
+p.lead {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+ul {
+    margin-top: 1rem;
+    color: #333;
+    font-size: 1.1rem;
 }
 
 /* Header */
@@ -25,6 +44,43 @@ header p {
     color: #666;
 }
 
+/* Animation*/
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.text-left h2,
+.text-left p,
+.profile-img {
+    animation: fadeIn 1s;
+}
+
+/* Bouton interactif*/
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+
 /* Navigation Tabs */
 .nav-tabs .nav-link {
     font-size: 1rem;
@@ -41,6 +97,7 @@ header p {
     background-color: #007bff;
 }
 
+/* Image */
 .profile-img {
     max-width: 70%; /* Ajustez cette valeur pour la taille de l'image */
     border-radius: 10px; /* Coins arrondis */
