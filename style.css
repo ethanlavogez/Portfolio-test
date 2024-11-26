@@ -145,12 +145,10 @@ h2.display-4 {
 
 .about-image {
     margin-top: 2rem;
-    padding-left: 1.5rem; /* Ajoute un espacement à gauche de l'image */
+    padding-left: 4rem; /* Ajoute un espacement à gauche de l'image */
 }
 
-.about-text {
-    padding-right: 1.5rem; /* Ajoute un espacement à droite du texte */
-}
+
 
 .about-image img {
     max-width: 100%; /* Ajustez selon la taille de votre image */
