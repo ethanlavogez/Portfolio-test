@@ -20,11 +20,6 @@ body {
     background-size: cover; /* S'assure que le fond couvre toute la section */
 }
 
-/* Réactiver le défilement pour les autres sections */
-.tab-content {
-    overflow-y: auto; /* Autorise le défilement vertical */
-}
-
 /* Titre et texte */
 h2.display-5 {
     font-family: 'Lobster', cursive; /* Téléchargez et liez cette police via Google Fonts */
