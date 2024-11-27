@@ -84,6 +84,7 @@ section h2 {
     max-width: 100%; /* S'assure que l'image ne déborde pas */
     height: auto; /* Maintient le ratio d'aspect */
     margin-top: 0;
+    margin-left: 20px;
 }
 
 h2.display-4 {
@@ -187,15 +188,20 @@ h2.display-4 {
 
 /* Section About Me */
 .about-section {
-    height: 100vh; /* Utilise toute la hauteur de l'écran */
+    min-height: calc(100vh - 60px); /* Hauteur de l'écran moins la hauteur du footer */
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centre verticalement */
+    justify-content: space-between; /* Centre verticalement */
     align-items: center; /* Centre horizontalement */
     padding: 20px; /* Ajoute un léger espacement */
 }
 
 .about-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     text-align: center; /* Centre le texte */
     max-width: 800px; /* Limite la largeur pour éviter que le texte ne soit trop étendu */
 }
@@ -512,13 +518,14 @@ html, body {
 
 /* Footer */
 footer {
+    position: static;
     background-color: #c0b1b17d;
     color: #333333;
     text-align: center;
     padding: 15px 0;
     font-size: 0.9rem;
     border-top: 2px solid #ddd;
-    margin-top: 20px;
+    margin-top: auto;
 }
 
 /* Section Contact */
