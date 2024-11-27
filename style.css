@@ -387,6 +387,7 @@ h2.display-4 {
     display: none; /* Remove connector for the first card */
 }
 
+/* Pied de page */
 html, body {
     height: 100%; /* Assure que l'ensemble de la page utilise 100% de la hauteur de l'écran */
     margin: 0;
@@ -397,6 +398,23 @@ html, body {
     flex: 1; /* Fait que le contenu occupe l'espace restant */
 }
 
+/* Spécifique à la section Skills */
+.Skills-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh; /* Hauteur minimale de l'écran */
+}
+
+.Skills-section .Skills-container {
+    flex: 1; /* Permet au contenu de s'étendre pour remplir l'espace */
+}
+
+.Skills-section footer {
+    margin-top: auto; /* Place le pied de page en bas */
+}
+
+
 /* Footer */
 footer {
     background-color: #c0b1b17d;
@@ -405,10 +423,6 @@ footer {
     padding: 15px 0;
     font-size: 0.9rem;
     border-top: 2px solid #ddd;
-    position: fixed; /* Fixe le pied de page en bas */
-    bottom: 0;
-    left: 0;
-    width: 100%;
     margin-top: 20px;
 }
 
