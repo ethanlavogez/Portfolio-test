@@ -108,6 +108,27 @@ h2.display-4 {
     margin-top: 20px; /* Ajustez la valeur selon vos besoins */
 }
 
+/* Section Home */
+.Home-section {
+    height: 100vh; /* Utilise toute la hauteur de l'écran */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centre verticalement */
+    align-items: center; /* Centre horizontalement */
+    padding: 20px; /* Ajoute un léger espacement */
+}
+
+.Home-container {
+    text-align: center; /* Centrer le texte */
+}
+
+.Home-container img {
+    margin-top: 20px; /* Espacement entre l'image et le texte */
+    max-width: 60%; /* Limite la largeur de l'image */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre douce */
+}
+
 /* About Me Section */
 .about-header {
     text-align: left; /* Aligner le texte à gauche */
@@ -162,6 +183,28 @@ h2.display-4 {
     margin-top: 1rem;
     font-size: 1.2rem;
     text-align: center;
+}
+
+/* Section About Me */
+.AboutMe-section {
+    height: 100vh; /* Utilise toute la hauteur de l'écran */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centre verticalement */
+    align-items: center; /* Centre horizontalement */
+    padding: 20px; /* Ajoute un léger espacement */
+}
+
+.AboutMe-container {
+    text-align: center; /* Centre le texte */
+    max-width: 800px; /* Limite la largeur pour éviter que le texte ne soit trop étendu */
+}
+
+.AboutMe-container img {
+    margin-top: 20px; /* Espacement entre l'image et le texte */
+    max-width: 40%; /* Taille de l'image ajustée */
+    border-radius: 50%; /* Image en forme de cercle */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre douce */
 }
 
 @media (max-width: 768px) {
