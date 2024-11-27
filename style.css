@@ -387,7 +387,7 @@ h2.display-4 {
     display: none; /* Remove connector for the first card */
 }
 
-/* Pied de page */
+/* --------------- Pied de page --------------- */
 html, body {
     height: 100%; /* Assure que l'ensemble de la page utilise 100% de la hauteur de l'écran */
     margin: 0;
@@ -421,6 +421,51 @@ html, body {
     margin-top: auto; /* Place le pied de page en bas */
 }
 
+/* Section Formation */
+.Formation-section {
+    height: 100vh; /* Utilise toute la hauteur de l'écran */
+    overflow: hidden; /* Désactive le défilement */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centre verticalement le contenu */
+    align-items: center; /* Centre horizontalement le contenu */
+    padding: 20px; /* Ajoute un léger espacement */
+}
+
+.Formation-section .formation-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centre parfaitement le contenu */
+}
+
+.Formation-section footer {
+    margin-top: auto; /* Place le pied de page en bas de la section */
+}
+
+/* Section Contact */
+.Contact-section {
+    height: 100vh; /* Utilise toute la hauteur de l'écran */
+    overflow: hidden; /* Désactive le défilement */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centre verticalement le contenu */
+    align-items: center; /* Centre horizontalement le contenu */
+    padding: 20px; /* Ajoute un léger espacement */
+}
+
+.Contact-section .contact-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centre parfaitement le contenu */
+}
+
+.Contact-section footer {
+    margin-top: auto; /* Place le pied de page en bas de la section */
+}
 
 /* Footer */
 footer {
