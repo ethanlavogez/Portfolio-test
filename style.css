@@ -219,6 +219,7 @@ h2.display-4 {
     justify-content: center;
     gap: 20px; /* Espacement uniforme entre les bulles */
     max-width: 80%; /* Limite la largeur des bulles */
+    margin: 0 auto; /* Centre la grille dans la section */
 }
 
 /* Bulles */
@@ -386,6 +387,16 @@ h2.display-4 {
     display: none; /* Remove connector for the first card */
 }
 
+html, body {
+    height: 100%; /* Assure que l'ensemble de la page utilise 100% de la hauteur de l'écran */
+    margin: 0;
+    padding: 0;
+}
+
+.tab-content {
+    flex: 1; /* Fait que le contenu occupe l'espace restant */
+}
+
 /* Footer */
 footer {
     background-color: #c0b1b17d;
@@ -394,6 +405,10 @@ footer {
     padding: 15px 0;
     font-size: 0.9rem;
     border-top: 2px solid #ddd;
+    position: fixed; /* Fixe le pied de page en bas */
+    bottom: 0;
+    left: 0;
+    width: 100%;
     margin-top: 20px;
 }
 
