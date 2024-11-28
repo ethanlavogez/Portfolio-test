@@ -112,7 +112,7 @@ h2.display-4 {
 /* Section Home */
 .Home-section {
     height: auto;
-    display: flex;
+    display: block;
     flex-direction: column;
     justify-content: center; /* Centre verticalement */
     align-items: center; /* Centre horizontalement */
@@ -199,7 +199,7 @@ h2.display-4 {
     height: auto;
     min-height: auto;
     overflow: visible;
-    display: flex;
+    display: block;
     flex-direction: column;
     justify-content: space-between; /* Centre verticalement */
     align-items: center; /* Centre horizontalement */
@@ -239,7 +239,7 @@ h2.display-4 {
     height: auto; /* Occupe toute la hauteur de la fenêtre */
     overflow: visible; /* Désactive le défilement dans cette section */
     min-height: auto;
-    display: flex;
+    display: block;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start; /* Aligne les éléments vers le haut */
@@ -440,7 +440,7 @@ html, body {
     height: auto;
     min-height: auto;
     display: block;
-    padding: 2rem;
+    padding: 20px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -468,12 +468,14 @@ html, body {
     flex-direction: column;
     justify-content: center; /* Centre verticalement le contenu */
     align-items: center; /* Centre horizontalement le contenu */
-    padding: 2rem; /* Ajoute un léger espacement */
+    padding: 20px; /* Ajoute un léger espacement */
 }
 
 .Formation-section .Formation-container {
-    flex: 1;
-    display: flex;
+    display: block;
+    height: auto;
+    min-height: auto;
+    overflow: visible;
     flex-direction: column;
     align-items: center;
     justify-content: center; /* Centre parfaitement le contenu */
@@ -492,12 +494,14 @@ html, body {
     flex-direction: column;
     justify-content: center; /* Centre verticalement le contenu */
     align-items: center; /* Centre horizontalement le contenu */
-    padding: 2rem; /* Ajoute un léger espacement */
+    padding: 20px; /* Ajoute un léger espacement */
 }
 
 .Contact-section .contact-container {
-    flex: 1;
-    display: flex;
+    height: auto;
+    min-height: auto;
+    overflow: visible;
+    display: block;
     flex-direction: column;
     align-items: center;
     justify-content: center; /* Centre parfaitement le contenu */
@@ -513,9 +517,9 @@ footer {
     background-color: #c0b1b17d;
     color: #333333;
     text-align: center;
-    padding: 1rem;
+    padding: 15px;
     font-size: 0.9rem;
-    border-top: 2px solid #ddd;
+    border-top: 1px solid #ddd;
     margin-top: 2rem;
 }
 
