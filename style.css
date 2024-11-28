@@ -393,7 +393,7 @@ h2.display-4 {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    padding: 2rem;
+    padding: 20px;
     background-color: #f9f9f9; /* Couleur de fond */
 }
 
