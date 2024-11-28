@@ -242,14 +242,13 @@ h2.display-4 {
 
 /* Skills Section */
 .Skills-container {
-    height: auto; /* Occupe toute la hauteur de la fenêtre */
-    overflow: visible; /* Désactive le défilement dans cette section */
-    min-height: auto;
-    display: block;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start; /* Aligne les éléments vers le haut */
-    padding-top: 50px 20px; /* Ajoute un espacement au-dessus */
+        height: 100vh; /* Occupe toute la hauteur de la fenêtre */
+        overflow: hidden; /* Désactive le défilement dans cette section */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start; /* Aligne les éléments vers le haut */
+        padding-top: 50px; /* Ajoute un espacement au-dessus */
 }
 
 .Skills-title {
