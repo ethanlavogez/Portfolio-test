@@ -121,6 +121,12 @@ h2.display-4 {
     min-height: auto;
 }
 
+.Home-section * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Évite que les marges/paddings n'affectent les dimensions */
+}
+
 .Home-container {
     text-align: center; /* Centrer le texte */
 }
