@@ -1,16 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap'); /* Police Lobster */
 
 /* Global Styles */
-html, body {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
-    color: #333;
-    background-color: #d3d3d399;
 }
 
-/* Header */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d3d3d399;
+    color: #333;
+}
+
 header {
     background-color: #c0b1b17d;
     border-bottom: 1px solid #ddd;
@@ -21,13 +23,11 @@ header h1 {
     font-size: 2.5rem;
     font-family: 'Lobster', cursive;
     color: #000;
-    margin: 0;
 }
 
 header p {
     font-size: 1rem;
     color: #666;
-    margin: 0;
 }
 
 /* Navigation Tabs */
@@ -48,73 +48,51 @@ header p {
 
 /* Sections */
 section {
-    padding: 20px;
-    margin: 0;
-    border: 1px solid #ddd;
-    border-radius: 8px;
     background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
 }
 
-/* Ensures each section adapts to its content */
-.tab-pane {
-    height: auto;
-    overflow: visible;
-    display: block;
-    padding: 20px;
+section h2 {
+    color: #000;
+}
+
+/* Shared Section Styles */
+.section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 50px;
+    overflow: hidden;
+}
+
+.section-title {
+    font-size: 5rem;
+    font-family: 'Lobster', cursive;
+    color: #b22222;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Home Section */
-.Home-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 50px 20px;
-    min-height: 100vh; /* Adapte la hauteur de la fenêtre */
-    overflow: visible;
-}
-
-.Home-title {
-    font-size: 5rem;
-    font-family: 'Lobster', cursive;
-    color: #b22222;
-    margin-bottom: 1rem;
-}
-
 .Home-container img {
     max-width: 60%;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
 }
 
-/* About Me Section */
-.about-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 50px 20px;
-    min-height: 100vh; /* Adapte la hauteur de la fenêtre */
-    overflow: visible;
-}
-
-.about-title {
-    font-size: 5rem;
-    font-family: 'Lobster', cursive;
-    color: #b22222;
-    margin-bottom: 1.5rem;
-}
-
-.about-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
+/* About Section */
 .about-container img {
     max-width: 40%;
     border-radius: 50%;
@@ -123,37 +101,31 @@ section {
 
 .about-text {
     font-size: 1.2rem;
-    line-height: 1.8;
     color: #333;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.about-quote {
+    font-style: italic;
+    color: #666;
+    font-size: 1.2rem;
+    text-align: center;
 }
 
 /* Skills Section */
-.Skills-section {
-    padding: 50px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: auto;
-}
-
-.Skills-title {
-    font-size: 5rem;
-    font-family: 'Lobster', cursive;
-    color: #b22222;
-    margin-bottom: 30px;
-}
-
 .Skills-bubbles {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
     max-width: 80%;
+    margin: 0 auto;
 }
 
 .bubble {
-    background-color: #f9f9f9;
     padding: 10px 20px;
+    background-color: #f9f9f9;
     border-radius: 50px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     font-size: 1.2rem;
@@ -167,29 +139,16 @@ section {
     transform: scale(1.1);
 }
 
-/* Experience Section */
-.timeline-section {
-    padding: 50px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: auto;
-}
-
-.timeline-section-title {
-    font-size: 4rem;
-    font-family: 'Lobster', cursive;
-    color: #b22222;
-    margin-bottom: 2rem;
-}
-
+/* Timeline Section */
 .timeline {
     width: 80%;
     margin: 0 auto;
+    padding: 2rem 0;
 }
 
 .timeline-item {
     display: flex;
+    align-items: flex-start;
     margin-bottom: 2rem;
 }
 
@@ -211,6 +170,12 @@ section {
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     flex-grow: 1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
 
 .timeline-content h3 {
@@ -219,52 +184,21 @@ section {
     margin-top: 0;
 }
 
-/* Formation Section */
-.Formation-section {
-    padding: 50px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: auto;
-}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .timeline-item {
+        flex-direction: column;
+        align-items: center;
+    }
 
-.Formation-section-title {
-    font-size: 4rem;
-    font-family: 'Lobster', cursive;
-    color: #b22222;
-    margin-bottom: 2rem;
-}
+    .circle {
+        margin-bottom: 1rem;
+    }
 
-/* Contact Section */
-.Contact-section {
-    padding: 50px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: auto;
-}
-
-.contact-title {
-    font-size: 4rem;
-    font-family: 'Lobster', cursive;
-    color: #b22222;
-    margin-bottom: 2rem;
-}
-
-.contact-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.contact-card {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 250px;
+    .timeline-content {
+        width: 100%;
+        text-align: center;
+    }
 }
 
 /* Footer */
@@ -273,5 +207,7 @@ footer {
     color: #333;
     text-align: center;
     padding: 1rem;
-    border-top: 2px solid #ddd;
+    font-size: 0.9rem;
+    border-top: 1px solid #ddd;
 }
+
