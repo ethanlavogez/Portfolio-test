@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap'); /* Importez la police Lobster */
 
-*, *::before, *::after {
-    box-sizing: border-box;
-}
-
 /* Global Styles */
 body {
     font-family: Arial, sans-serif;
