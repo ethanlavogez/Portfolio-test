@@ -607,9 +607,11 @@ body {
     display: flex; /* Utilise le modèle flexbox pour centrer le contenu */
     justify-content: center;
     align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
 img {
-    max-width: 50%;
+    max-width: 100%;
     height: auto;
 }
