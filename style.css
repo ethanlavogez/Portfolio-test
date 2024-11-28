@@ -602,7 +602,7 @@ body {
 }
 
 .Home-section, .about-section, .Skills-section, .experiences, .Formation, .Contact-section {
-    height: 50vh; /* Chaque section occupera 100% de la hauteur de la fenêtre */
+    height: 100vh; /* Chaque section occupera 100% de la hauteur de la fenêtre */
     overflow: hidden; /* Masque tout débordement */
     display: flex; /* Utilise le modèle flexbox pour centrer le contenu */
     justify-content: center;
