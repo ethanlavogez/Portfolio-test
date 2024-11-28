@@ -388,7 +388,12 @@ h2.display-4 {
 }
 
 .Formation-section {
-    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 2rem;
     background-color: #f9f9f9; /* Couleur de fond */
 }
 
@@ -400,6 +405,8 @@ h2.display-4 {
     padding: 2rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 70%;
+    max-width: 800px;
 }
 
 .formation-block:hover {
@@ -432,6 +439,10 @@ h2.display-4 {
 
 /* Media Queries */
 @media (max-width: 768px) {
+    .formation-block {
+        width: 90%;
+    }
+
     .formation-content h3 {
         font-size: 1.5rem;
     }
