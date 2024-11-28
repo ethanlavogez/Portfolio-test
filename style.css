@@ -377,7 +377,7 @@ h2.display-4 {
 }
 
 /* Section Formation */
-.formation-title h1 {
+.Formation-title h1 {
     font-size: 4rem; /* Taille plus grande */
     color: #b22222; /* Rouge vintage */
     font-family: 'Lobster', cursive; 
@@ -387,7 +387,7 @@ h2.display-4 {
     text-align: center;
 }
 
-.formation-section {
+.Formation-section {
     padding: 2rem;
     display: flex;
     flex-direction: column;
@@ -396,7 +396,7 @@ h2.display-4 {
 }
 
 /* Timeline */
-.formation-timeline {
+.Formation-timeline {
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -406,7 +406,7 @@ h2.display-4 {
     scroll-behavior: smooth; /* Défilement fluide */
 }
 
-.formation-item {
+.Formation-item {
     flex: 0 0 300px; /* Largeur fixe pour les cartes */
     background-color: #fff;
     border-radius: 10px;
@@ -416,43 +416,43 @@ h2.display-4 {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.formation-item:hover {
+.Formation-item:hover {
     transform: translateY(-5px); /* Légère élévation au survol */
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
 
-.formation-content h3 {
+.Formation-content h3 {
     font-size: 1.5rem;
     color: #007bff;
     margin-bottom: 1rem;
 }
 
-.formation-content p,
-.formation-content ul {
+.Formation-content p,
+.Formation-content ul {
     font-size: 1rem;
     color: #555;
     margin-bottom: 0.5rem;
 }
 
-.formation-content ul {
+.Formation-content ul {
     padding-left: 20px;
 }
 
 /* Défilement masqué pour ne montrer que la barre horizontale */
-.formation-timeline::-webkit-scrollbar {
+.Formation-timeline::-webkit-scrollbar {
     height: 8px;
 }
 
-.formation-timeline::-webkit-scrollbar-thumb {
+.Formation-timeline::-webkit-scrollbar-thumb {
     background: #ccc;
     border-radius: 10px;
 }
 
-.formation-timeline::-webkit-scrollbar-thumb:hover {
+.Formation-timeline::-webkit-scrollbar-thumb:hover {
     background: #007bff;
 }
 
-.formation-logo {
+.Formation-logo {
     width: 80px;
     height: auto;
     margin-bottom: 1rem;
