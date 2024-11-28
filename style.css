@@ -111,11 +111,13 @@ h2.display-4 {
 
 /* Section Home */
 .Home-section {
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center; /* Centre verticalement */
     align-items: center; /* Centre horizontalement */
     padding: 20px; /* Ajoute un léger espacement */
+    overflow: auto;
 }
 
 .Home-container {
@@ -232,7 +234,7 @@ h2.display-4 {
 /* Skills Section */
 .Skills-container {
     height: auto; /* Occupe toute la hauteur de la fenêtre */
-    overflow: hidden; /* Désactive le défilement dans cette section */
+    overflow: auto; /* Désactive le défilement dans cette section */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -449,7 +451,7 @@ html, body {
 
 /* Section Formation */
 .Formation-section {
-    overflow: hidden; /* Désactive le défilement */
+    overflow: auto; /* Désactive le défilement */
     display: flex;
     flex-direction: column;
     justify-content: center; /* Centre verticalement le contenu */
@@ -471,7 +473,7 @@ html, body {
 
 /* Section Contact */
 .Contact-section {
-    overflow: hidden; /* Désactive le défilement */
+    overflow: auto; /* Désactive le défilement */
     display: flex;
     flex-direction: column;
     justify-content: center; /* Centre verticalement le contenu */
