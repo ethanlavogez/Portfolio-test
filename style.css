@@ -301,8 +301,7 @@ h2.display-4 {
     color: #b22222; /* Rouge vintage */
     font-family: 'Lobster', cursive;
     font-weight: bold;
-    line-height: 1.2;
-    margin-bottom: 2rem;
+    margin: 2rem 0;
     text-align: center;
 }
 
@@ -339,7 +338,7 @@ h2.display-4 {
 }
 
 .formation .circle {
-    background-color: #007bff; /* Bleu pour Formation */
+    background-color: #b22222; /* Bleu pour Formation */
 }
 
 .timeline-item::before {
