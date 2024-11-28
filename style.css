@@ -377,7 +377,7 @@ h2.display-4 {
     color: #b22222;
 }
 
-.formation .timeline-content h3 {
+.Formation .timeline-content h3 {
     color: #007bff;
 }
 
@@ -460,7 +460,7 @@ html, body {
     padding: 20px; /* Ajoute un léger espacement */
 }
 
-.Formation-section .formation-container {
+.Formation-section .Formation-container {
     flex: 1;
     display: flex;
     flex-direction: column;
