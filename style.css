@@ -117,7 +117,8 @@ h2.display-4 {
     justify-content: center; /* Centre verticalement */
     align-items: center; /* Centre horizontalement */
     padding: 20px; /* Ajoute un léger espacement */
-    overflow: auto;
+    overflow: visible;
+    min-height: auto;
 }
 
 .Home-container {
@@ -195,7 +196,9 @@ h2.display-4 {
 
 /* Section About Me */
 .about-section {
-    min-height: calc(100vh - 60px); /* Hauteur de l'écran moins la hauteur du footer */
+    height: auto;
+    min-height: auto;
+    overflow: visible;
     display: flex;
     flex-direction: column;
     justify-content: space-between; /* Centre verticalement */
@@ -234,7 +237,8 @@ h2.display-4 {
 /* Skills Section */
 .Skills-container {
     height: auto; /* Occupe toute la hauteur de la fenêtre */
-    overflow: auto; /* Désactive le défilement dans cette section */
+    overflow: visible; /* Désactive le défilement dans cette section */
+    min-height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -418,19 +422,25 @@ h2.display-4 {
 
 /* --------------- Pied de page --------------- */
 html, body {
-    height: 100%; /* Assure que l'ensemble de la page utilise 100% de la hauteur de l'écran */
+    height: auto; /* Assure que l'ensemble de la page utilise 100% de la hauteur de l'écran */
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 .tab-content {
-    flex: 1; /* Fait que le contenu occupe l'espace restant */
+    height: auto; /* S'ajuste automatiquement au contenu */
+    display: block; /* Retire tout comportement "flex" qui pourrait forcer l'expansion */
+    overflow: visible; /* Permet l'ajustement du contenu sans contraintes */
 }
 
 /* Spécifique à la section Skills */
 .Skills-section {
-    overflow: hidden;
-    display: flex;
+    overflow: visible;
+    height: auto;
+    min-height: auto;
+    display: block;
+    padding: 2rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -451,12 +461,14 @@ html, body {
 
 /* Section Formation */
 .Formation-section {
-    overflow: auto; /* Désactive le défilement */
-    display: flex;
+    height: auto;
+    min-height: auto;
+    overflow: visible; /* Désactive le défilement */
+    display: block;
     flex-direction: column;
     justify-content: center; /* Centre verticalement le contenu */
     align-items: center; /* Centre horizontalement le contenu */
-    padding: 20px; /* Ajoute un léger espacement */
+    padding: 2rem; /* Ajoute un léger espacement */
 }
 
 .Formation-section .Formation-container {
@@ -473,12 +485,14 @@ html, body {
 
 /* Section Contact */
 .Contact-section {
-    overflow: auto; /* Désactive le défilement */
-    display: flex;
+    overflow: visible;
+    height: auto;
+    min-height: auto;
+    display: block;
     flex-direction: column;
     justify-content: center; /* Centre verticalement le contenu */
     align-items: center; /* Centre horizontalement le contenu */
-    padding: 20px; /* Ajoute un léger espacement */
+    padding: 2rem; /* Ajoute un léger espacement */
 }
 
 .Contact-section .contact-container {
@@ -495,14 +509,14 @@ html, body {
 
 /* Footer */
 footer {
-    position: static;
+    position: relative;
     background-color: #c0b1b17d;
     color: #333333;
     text-align: center;
-    padding: 15px 0;
+    padding: 1rem;
     font-size: 0.9rem;
     border-top: 2px solid #ddd;
-    margin-top: auto;
+    margin-top: 2rem;
 }
 
 /* Section Contact */
