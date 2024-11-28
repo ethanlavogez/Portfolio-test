@@ -387,6 +387,14 @@ h2.display-4 {
     text-align: center;
 }
 
+.formation-section {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9; /* Couleur de fond */
+}
+
 /* Timeline */
 .formation-timeline {
     display: flex;
@@ -395,55 +403,59 @@ h2.display-4 {
     gap: 2rem;
     overflow-x: auto; /* Permet le défilement horizontal si les cartes débordent */
     padding: 2rem 0;
+    scroll-behavior: smooth; /* Défilement fluide */
 }
 
-.formation-card {
-    background-color: #f9f9f9;
+.formation-item {
+    flex: 0 0 300px; /* Largeur fixe pour les cartes */
+    background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 1.5rem;
-    width: 300px;
-    text-align: center;
-    position: relative;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.formation-card:hover {
-    transform: translateY(-5px);
-    transition: 0.3s ease-in-out;
+.formation-item:hover {
+    transform: translateY(-5px); /* Légère élévation au survol */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.formation-content h3 {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 1rem;
+}
+
+.formation-content p,
+.formation-content ul {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+.formation-content ul {
+    padding-left: 20px;
+}
+
+/* Défilement masqué pour ne montrer que la barre horizontale */
+.formation-timeline::-webkit-scrollbar {
+    height: 8px;
+}
+
+.formation-timeline::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+}
+
+.formation-timeline::-webkit-scrollbar-thumb:hover {
+    background: #007bff;
 }
 
 .formation-logo {
     width: 80px;
     height: auto;
     margin-bottom: 1rem;
-}
-
-.formation-card h3 {
-    font-size: 1.5rem;
-    color: #007bff;
-    margin: 0.5rem 0;
-}
-
-.formation-card p {
-    font-size: 1rem;
-    color: #555;
-    margin: 0.5rem 0;
-}
-
-/* Connectors */
-.formation-card::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: -20px; /* Adjust depending on spacing */
-    width: 20px;
-    height: 2px;
-    background-color: #ddd;
-    z-index: -1;
-}
-
-.formation-card:first-child::before {
-    display: none; /* Remove connector for the first card */
 }
 
 /* --------------- Pied de page --------------- */
