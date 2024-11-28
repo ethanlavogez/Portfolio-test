@@ -595,3 +595,21 @@ footer {
     }
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Empêche le défilement de la page */
+}
+
+.Home-section, .about-section, .Skills-section, .experiences, .Formation, .Contact-section {
+    height: 100vh; /* Chaque section occupera 100% de la hauteur de la fenêtre */
+    overflow: hidden; /* Masque tout débordement */
+    display: flex; /* Utilise le modèle flexbox pour centrer le contenu */
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
