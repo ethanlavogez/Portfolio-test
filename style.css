@@ -388,68 +388,58 @@ h2.display-4 {
 }
 
 .Formation-section {
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: 2rem 0;
     background-color: #f9f9f9; /* Couleur de fond */
 }
 
-/* Timeline */
-.Formation-timeline {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 2rem;
-    overflow-x: auto; /* Permet le défilement horizontal si les cartes débordent */
-    padding: 2rem 0;
-    scroll-behavior: smooth; /* Défilement fluide */
-}
-
-.Formation-item {
-    flex: 0 0 300px; /* Largeur fixe pour les cartes */
+.formation-block {
     background-color: #fff;
+    border: 1px solid #ddd;
     border-radius: 10px;
+    margin-bottom: 2rem;
+    padding: 2rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 1.5rem;
-    text-align: left;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.Formation-item:hover {
-    transform: translateY(-5px); /* Légère élévation au survol */
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+.formation-block:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
-.Formation-content h3 {
-    font-size: 1.5rem;
+/* Alternating Backgrounds */
+.formation-block:nth-child(even) {
+    background-color: #f0f0f0; /* Légèrement différent pour distinguer */
+}
+
+.formation-content h3 {
+    font-size: 1.8rem;
     color: #007bff;
     margin-bottom: 1rem;
 }
 
-.Formation-content p,
-.Formation-content ul {
+.formation-content p,
+.formation-content ul {
     font-size: 1rem;
     color: #555;
     margin-bottom: 0.5rem;
 }
 
-.Formation-content ul {
-    padding-left: 20px;
+.formation-content ul {
+    list-style: disc;
+    padding-left: 1.5rem;
 }
 
-/* Défilement masqué pour ne montrer que la barre horizontale */
-.Formation-timeline::-webkit-scrollbar {
-    height: 8px;
-}
+/* Media Queries */
+@media (max-width: 768px) {
+    .formation-content h3 {
+        font-size: 1.5rem;
+    }
 
-.Formation-timeline::-webkit-scrollbar-thumb {
-    background: #ccc;
-    border-radius: 10px;
-}
-
-.Formation-timeline::-webkit-scrollbar-thumb:hover {
-    background: #007bff;
+    .formation-content p,
+    .formation-content ul {
+        font-size: 0.9rem;
+    }
 }
 
 .Formation-logo {
