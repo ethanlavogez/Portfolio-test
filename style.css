@@ -1,0 +1,23 @@
+/*Couleur de fond*/
+body {
+    background-color: #343a40; /* Gris foncé */
+    color: white; /* Texte en blanc pour contraste */
+}
+
+/* Navigateur */
+h1, h3 {
+    font-family: Arial, sans-serif;
+}
+
+.nav-tabs .nav-link {
+    color: #333;
+    font-size: 1rem;
+    transition: color 0.3s, background-color 0.3s;
+    background-color: #495057;
+    border: 1px solid #6c757d;
+}
+
+.nav-tabs .nav-link.active {
+    color: #696969;
+    background-color: #fff;
+}
