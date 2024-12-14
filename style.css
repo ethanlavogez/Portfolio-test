@@ -151,7 +151,49 @@ h1, h3 {
 }
 
 .about-image img {
-    max-width: 70%; /* Ajustez selon la taille de votre image */
+    max-width: 80%; /* Ajustez selon la taille de votre image */
     border-radius: 10px; /* Coins arrondis */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajoute une ombre douce */
+}
+
+/* -------------------- Section skills ----------------*/
+.Skills-title {
+    font-size: 6rem;
+    color: #b22222; /* Rouge foncé */
+    font-family: 'Lobster', cursive; /* Police vintage */
+    margin-bottom: 30px;
+    transition: transform 0.3s;
+}
+
+/* Effet de hover sur Skills */
+.Skills-title:hover {
+    transform: scale(1.1);
+}
+
+/* Positionnement des bulles pour éviter tout chevauchement */
+.Skills-bubbles {
+    display: flex;
+    flex-wrap: wrap; /* Permet de passer à la ligne si nécessaire */
+    justify-content: center;
+    gap: 20px; /* Espacement uniforme entre les bulles */
+    max-width: 80%; /* Limite la largeur des bulles */
+    margin: 0 auto; /* Centre la grille dans la section */
+}
+
+/* Bulles */
+.bubble {
+    padding: 10px 20px;
+    background-color: #f9f9f9;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+/* Hover effect on bubbles */
+.bubble:hover {
+    background-color: #b22222; /* Même rouge que Skills */
+    color: #fff; /* Texte en blanc */
+    transform: scale(1.1);
 }
