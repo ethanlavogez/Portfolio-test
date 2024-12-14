@@ -109,6 +109,6 @@ h1, h3 {
 
 /* Eviter le défilement de la section home */
 .home-section {
-    height: calc(100vh - 80px); /* Ajustez en fonction de la hauteur de l'en-tête */
+    height: calc(100vh - 100px); /* Ajustez en fonction de la hauteur de l'en-tête */
     overflow: hidden; /* Empêche le défilement */
 }
