@@ -130,12 +130,6 @@ h1, h3 {
     line-height: 1.2;
 }
 
-.about {
-    display: flex; /* Utiliser flexbox pour centrer horizontalement */
-    justify-content: center; /* Centrer horizontalement */
-    align-items: center; /* Centrer verticalement */
-}
-
 .about-intro,
 .about-sport,
 .about-vision {
