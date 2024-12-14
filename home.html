@@ -17,33 +17,42 @@
             <nav>
                 <ul class="nav nav-tabs justify-content-end" id="portfolioTabs" role="tablist">
                     <li class="nav-item">
-                        <a class="nav-link active" id="Home-tab" data-bs-toggle="tab" href="#Home" role="tab" aria-controls="Home" aria-selected="true">Home</a>
+                        <a class="nav-link active" href="home.html" role="tab" aria-controls="Home" aria-selected="true">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="about-tab" data-bs-toggle="tab" href="#about" role="tab" aria-controls="about" aria-selected="false">A propos de moi</a>
+                        <a class="nav-link" href="about.html" role="tab" aria-controls="about" aria-selected="false">A propos de moi</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="Skills-tab" data-bs-toggle="tab" href="#Skills" role="tab" aria-controls="Skills" aria-selected="false">Compétences</a>
+                        <a class="nav-link" href="skills.html" role="tab" aria-controls="Skills" aria-selected="false">Compétences</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="Experiences-tab" data-bs-toggle="tab" href="#Experiences" role="tab" aria-controls="Experiences" aria-selected="false">Experiences</a>
+                        <a class="nav-link" href="experience.html" role="tab" aria-controls="Experiences" aria-selected="false">Experiences</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="Formation-tab" data-bs-toggle="tab" href="#Formation" role="tab" aria-controls="Formation" aria-selected="false">Formation</a>    
+                        <a class="nav-link" href="education.html" role="tab" aria-controls="Formation" aria-selected="false">Formation</a>    
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="Contact-tab" data-bs-toggle="tab" href="#Contact" role="tab" aria-controls="Contact" aria-selected="false">Contact</a>
+                        <a class="nav-link" href="contact.html" role="tab" aria-controls="Contact" aria-selected="false">Contact</a>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Page Content -->
-    <div class="container" style="margin-top: 80px;">
-        <h1>Home</h1>
-        <p>Welcome to the home section of my portfolio.</p>
-        <p>Here, you can explore various aspects of my professional journey, including my skills, experiences, and educational background. Use the navigation bar above to browse through different sections.</p>
+    <div class="container d-flex flex-column flex-md-row align-items-center min-vh-100">
+        <!--Left Section-->
+        <div class="col-md-6 text-left">
+            <h1 class="Home-title"><strong><em>Welcome to My Portfolio !</em></strong></h1>
+            <p>Dans ce portfolio, vous découvrirez mes compétences, mes projets et ma vision de l'utilisation des données pour améliorer les résultats en santé. J'espère que vous trouverez ces informations utiles et inspirantes.</p>
+            <p>Merci de votre visite et n'hésitez pas à me contacter si vous avez des questions ou des opportunités de collaboration !</p>
+            <a href="about.html" class="btn btn-primary mt-3">Explorez-moi</a>
+        </div>
+
+        <!-- Right Section -->
+        <div class="col-md-6 text-center">
+            <img src="assets/image_photo.png" alt="Ethan Lavogez" class="profile-img" style="margin-top: 0;">
+            <p class="quote"><em>Transformez les données en solutions pour un avenir meilleur.</em></p>
+        </div>
     </div>
 
     <!-- Bootstrap JS -->
