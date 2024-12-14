@@ -83,7 +83,7 @@ h1, h3 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre pour faire ressortir l'image */
     max-width: 100%; /* S'assure que l'image ne déborde pas */
     height: auto; /* Maintient le ratio d'aspect */
-    margin-top: 0px;
+    margin-top: 10px;
     margin-left: 20px;
 }
 
@@ -114,7 +114,7 @@ h1, h3 {
     display: flex;
     flex-direction: column; /* Aligne les éléments verticalement */
     align-items: center; /* Centre horizontalement */
-    margin-top: 0px; /* Ajustez cette valeur pour réduire l'espace */
+    margin-top: 0; /* Ajustez cette valeur pour réduire l'espace */
 }
 
 .Home-title {
@@ -124,5 +124,9 @@ h1, h3 {
     font-weight: bold; /* Mettre en gras */
     line-height: 1.2; /* Réduction de l'espacement entre les lignes */
     margin-bottom: 1.5rem;
-    margin-top: 1000; /* Supprimez la marge supérieure si elle existe */
+    margin-top: 0; /* Supprimez la marge supérieure si elle existe */
+}
+
+.text-left p {
+    margin-top: 10px; /* Ajustez cette valeur pour réduire l'espace entre les paragraphes */
 }
