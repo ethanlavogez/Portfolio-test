@@ -128,6 +128,11 @@ h1, h3 {
     font-size: 5em; /* Taille plus grande */
     font-weight: bold;
     line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.about {
+    padding: 40px 0; /* Ajoute un peu d'espace en haut et en bas */
 }
 
 .about-intro,
@@ -137,6 +142,13 @@ h1, h3 {
     color: var(--text-dark);
     margin-bottom: 1.5rem;
     line-height: 1.8;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.about img {
+    max-width: 100%; /* Assure que l'image ne déborde pas */
+    height: auto; /* Garde les proportions de l'image */
 }
 
 .about-image {
