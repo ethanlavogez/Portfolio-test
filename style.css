@@ -123,10 +123,11 @@ h1, h3 {
 
 /*-------------------- Section About ----------------*/
 .about-title {
-    color: #C72C41; /* Couleur rouge vintage */
+    color: #b22222; /* Couleur rouge vintage */
     font-family: 'Lobster', cursive; /* Police Lobster */
-    font-size: 3em; /* Taille plus grande */
-    text-align: center; /* Centrer le texte */
+    font-size: 5em; /* Taille plus grande */
+    font-weight: bold;
+    line-height: 1.2;
 }
 
 .about {
@@ -135,7 +136,22 @@ h1, h3 {
     align-items: center; /* Centrer verticalement */
 }
 
+.about-intro,
+.about-sport,
+.about-vision {
+    font-size: 1.2rem;
+    color: var(--text-dark);
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
+
+.about-image {
+    margin-top: 2rem;
+    padding-left: 4rem; /* Ajoute un espacement à gauche de l'image */
+}
+
 .about-image img {
-    max-width: 80%; /* Réduire la taille de l'image */
-    height: auto; /* Garder les proportions de l'image */
+    max-width: 100%; /* Ajustez selon la taille de votre image */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajoute une ombre douce */
 }
