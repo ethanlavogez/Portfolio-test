@@ -16,6 +16,10 @@ header {
     border-bottom: 1px solid #DDDDDD; /* Bordure grise claire en bas */
     padding: 20px; /* Espacement interne (haut, bas, gauche, droite) */
     margin-bottom: 0; /* Pas d'espacement externe en bas */
+    height: 80px; /* Exemple de hauteur pour l'en-tête */
+    position: fixed; /* Si l'en-tête est fixe */
+    width: 100%; /* S'assure qu'il prend toute la largeur */
+    z-index: 1000; /* Pour s'assurer qu'il est au-dessus du contenu */
 }
 
 header h1 {
@@ -106,6 +110,7 @@ h1, h3 {
 
 /* Eviter le défilement de la section home */
 .home-section {
-    max-height: 50vh; /* Limite la hauteur à la hauteur de la fenêtre */
+    height: calc(100vh - 80px); /* Ajustez en fonction de la hauteur de l'en-tête */
     overflow: hidden; /* Empêche le défilement */
+    margin-top: 80px; /* Ajoutez une marge pour compenser la hauteur de l'en-tête si nécessaire */
 }
