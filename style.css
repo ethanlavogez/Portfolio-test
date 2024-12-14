@@ -106,5 +106,5 @@ h1, h3 {
 
 /* Eviter le défilement de la section home */
 .home-section {
-    overflow: hidden; /* Empêche le défilement uniquement dans la section Home */
+    overflow-y: hidden; /* Empêche le défilement uniquement dans la section Home */
 }
