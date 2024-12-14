@@ -106,6 +106,6 @@ h1, h3 {
 
 /* Eviter le défilement de la section home */
 .home-section {
-    max-height: 80vh; /* Limite la hauteur à la hauteur de la fenêtre */
+    max-height: 50vh; /* Limite la hauteur à la hauteur de la fenêtre */
     overflow: hidden; /* Empêche le défilement */
 }
