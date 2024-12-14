@@ -67,3 +67,20 @@ h1, h3 {
     color: #fff;
     background-color: #696969;
 }
+
+/* Page home */
+.Home-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.profile-img {
+    width: 200px; /* Ajustez la taille selon vos besoins */
+    border-radius: 50%; /* Pour un effet circulaire */
+}
+
+.quote {
+    font-style: italic;
+    color: #6c757d; /* Couleur grise pour la citation */
+    margin-top: 20px;
+}
