@@ -16,7 +16,7 @@ header {
     border-bottom: 1px solid #DDDDDD; /* Bordure grise claire en bas */
     padding: 20px; /* Espacement interne (haut, bas, gauche, droite) */
     margin-bottom: 0; /* Pas d'espacement externe en bas */
-    height: 80px; /* Exemple de hauteur pour l'en-tête */
+    height: 100px; /* Exemple de hauteur pour l'en-tête */
     width: 100%; /* S'assure qu'il prend toute la largeur */
     z-index: 1000; /* Pour s'assurer qu'il est au-dessus du contenu */
 }
