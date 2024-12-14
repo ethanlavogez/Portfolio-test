@@ -146,18 +146,11 @@ h1, h3 {
     max-width: 600px;
 }
 
-.about img {
-    max-width: 100%; /* Assure que l'image ne déborde pas */
-    height: auto; /* Garde les proportions de l'image */
-}
-
-.about-image {
-    margin-top: 2rem;
-    padding-left: 4rem; /* Ajoute un espacement à gauche de l'image */
-}
-
-.about-image img {
+.img-fluid {
     max-width: 100%; /* Ajustez selon la taille de votre image */
     border-radius: 10px; /* Coins arrondis */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajoute une ombre douce */
+    height: auto; /* Garde les proportions de l'image */
+    margin-top: 2rem;
+    padding-left: 4rem; /* Ajoute un espacement à gauche de l'image */
 }
