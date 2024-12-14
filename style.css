@@ -1,6 +1,6 @@
 /*Couleur de fond*/
 body {
-    background-color: #343a40; /* Gris foncé */
+    background-color: #d3d3d399; /* Gris clair */
     color: white; /* Texte en blanc pour contraste */
 }
 
@@ -13,8 +13,10 @@ h1, h3 {
     color: #333;
     font-size: 1rem;
     transition: color 0.3s, background-color 0.3s;
-    background-color: #495057;
-    border: 1px solid #6c757d;
+}
+
+.nav-tabs .nav-link:hover {
+    color: #A9A9A9;
 }
 
 .nav-tabs .nav-link.active {
