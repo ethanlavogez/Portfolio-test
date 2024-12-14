@@ -111,5 +111,4 @@ h1, h3 {
 .home-section {
     height: calc(100vh - 80px); /* Ajustez en fonction de la hauteur de l'en-tête */
     overflow: hidden; /* Empêche le défilement */
-    margin-top: 80px; /* Ajoutez une marge pour compenser la hauteur de l'en-tête si nécessaire */
 }
