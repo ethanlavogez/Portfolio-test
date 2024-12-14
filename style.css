@@ -138,6 +138,7 @@ h1, h3 {
 .about-sport,
 .about-vision {
     max-width: 20px 0;
+    font-size: 2rem;
 }
 
 .about-image {
@@ -150,7 +151,7 @@ h1, h3 {
 }
 
 .about-image img {
-    max-width: 100%; /* Ajustez selon la taille de votre image */
+    max-width: 70%; /* Ajustez selon la taille de votre image */
     border-radius: 10px; /* Coins arrondis */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajoute une ombre douce */
 }
