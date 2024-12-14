@@ -64,6 +64,6 @@ h1, h3 {
 }
 
 .nav-tabs .nav-link.active {
-    color: #696969;
-    background-color: #fff;
+    color: #fff;
+    background-color: #696969;
 }
