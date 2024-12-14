@@ -1,7 +1,51 @@
-/*Couleur de fond*/
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap'); /* Importez la police Lobster */
+
+/* Global Styles */
 body {
-    background-color: #d3d3d399; /* Gris clair */
-    color: white; /* Texte en blanc pour contraste */
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    background-color: #d3d3d399;
+    margin: 0;
+    padding: 0;
+    color: #333333;
+}
+
+/* Header */
+header {
+    background-color: #c0b1b17d; /* Couleur de fond légèrement translucide */
+    border-bottom: 1px solid #DDDDDD; /* Bordure grise claire en bas */
+    padding: 20px; /* Espacement interne (haut, bas, gauche, droite) */
+    margin-bottom: 0; /* Pas d'espacement externe en bas */
+}
+
+header h1 {
+    font-size: 2.5rem; /* Taille du texte (relativement grande) */
+    font-weight: bold; /* Met le texte en gras */
+    color: #000000; /* Couleur noire pour le titre */
+    margin-bottom: 0; /* Pas d'espace en dessous */
+}
+
+h2 {
+    color: #333;
+    font-size: 2em; /* Taille légèrement plus petite */
+    font-weight: bold;
+}
+
+h3 {
+    color: #333;
+    font-size: 1.5em; /* Encore plus petit pour les sous-sections */
+    font-weight: normal; /* Peut être normal pour moins d'impact */
+}
+
+header p {
+    font-size: 1rem; /* Taille standard pour les paragraphes */
+    margin: 0; /* Pas d'espace autour des paragraphes */
+    color: #666666; /* Texte gris clair */
+    line-height: 1.5; /* Espacement entre les lignes pour améliorer la lisibilité */
+}
+
+strong {
+    font-weight: bold; /* Met en gras */
 }
 
 /* Navigateur */
