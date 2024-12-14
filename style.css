@@ -142,15 +142,21 @@ h1, h3 {
     color: var(--text-dark);
     margin-bottom: 1.5rem;
     line-height: 1.8;
-    margin: 0 auto;
+    margin: 20px auto;
     max-width: 600px;
 }
 
-.img-fluid {
+.about-image {
+    margin-top: 20px; /* Ajoute de l'espace au-dessus de l'image */
+}
+
+.about img {
+    max-width: 100%; /* Assure que l'image ne déborde pas */
+    height: auto; /* Garde les proportions de l'image */
+}
+
+.about-image img {
     max-width: 100%; /* Ajustez selon la taille de votre image */
     border-radius: 10px; /* Coins arrondis */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajoute une ombre douce */
-    height: auto; /* Garde les proportions de l'image */
-    margin-top: 2rem;
-    padding-left: 4rem; /* Ajoute un espacement à gauche de l'image */
 }
