@@ -68,7 +68,7 @@ h1, h3 {
     background-color: #696969;
 }
 
-/* Page home */
+/* ---------------- Page home ----------------*/ 
 .Home-title {
     font-size: 2.5rem;
     margin-bottom: 20px;
@@ -102,4 +102,9 @@ h1, h3 {
 
 .btn-primary:hover {
     background-color: #696969; /* Couleur du bouton au survol */
+}
+
+/* Eviter le défilement de la section home */
+.home-section {
+    overflow: hidden; /* Empêche le défilement uniquement dans la section Home */
 }
