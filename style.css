@@ -197,3 +197,108 @@ h1, h3 {
     color: #fff; /* Texte en blanc */
     transform: scale(1.1);
 }
+
+/* -------------------- Section expériences et formations ----------------*/
+
+/* Section Titles */
+.timeline-section-title {
+    font-size: 4rem;
+    color: #b22222; /* Rouge vintage */
+    font-family: 'Lobster', cursive;
+    font-weight: bold;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+/* Timeline */
+.timeline {
+    position: relative;
+    margin: 0 auto;
+    padding: 2rem 0;
+    width: 80%;
+}
+
+.timeline-item {
+    display: flex;
+    margin-bottom: 2rem;
+    align-items: flex-start;
+    position: relative;
+}
+
+.circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+/* Differentiating Circle Colors */
+.experiences .circle {
+    background-color: #b22222; /* Rouge pour Expériences */
+}
+
+.Formation .circle {
+    background-color: #b22222; /* Bleu pour Formation */
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: 2px;
+    height: 100%;
+    background-color: #ddd;
+    z-index: -1;
+}
+
+.timeline-content {
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: calc(100% - 60px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.timeline-content h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #b22222;
+}
+
+/* Differentiating Headings */
+.experiences .timeline-content h3 {
+    color: #b22222;
+}
+
+.Formation .timeline-content h3 {
+    color: #007bff;
+}
+
+.timeline-content p,
+.timeline-content ul {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+.timeline-content ul {
+    padding-left: 20px;
+}
+
+.timeline-content img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 1rem;
+}
