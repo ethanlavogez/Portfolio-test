@@ -390,3 +390,24 @@ h1, h3 {
     background-color: #ffb3b3; /* Couleur de fond au survol */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre au survol */
 }
+
+.cv-download {
+    margin-top: 20px; /* Espacement supérieur */
+    text-align: center; /* Centrer le texte */
+}
+
+.cv-download h2 {
+    color: #333; /* Couleur du titre */
+    margin-bottom: 10px; /* Espacement inférieur */
+}
+
+.cv-download a {
+    text-decoration: none; /* Supprimer le soulignement */
+    padding: 10px 20px; /* Espacement interne */
+    border-radius: 5px; /* Coins arrondis */
+    transition: background-color 0.3s; /* Transition pour l'effet de survol */
+}
+
+.cv-download a:hover {
+    background-color: #0056b3; /* Couleur de fond au survol */
+}
