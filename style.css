@@ -8,7 +8,6 @@ body {
     margin: 0;
     padding: 0;
     color: #333333;
-    padding-top: 120px; /* Ajustez selon la hauteur de votre header */
 }
 
 /* Header */
@@ -20,9 +19,6 @@ header {
     height: 100px; /* Exemple de hauteur pour l'en-tête */
     width: 100%; /* S'assure qu'il prend toute la largeur */
     z-index: 1000; /* Pour s'assurer qu'il est au-dessus du contenu */
-    position: fixed;
-    top: 0;
-    left: 0;
 }
 
 section {
