@@ -367,19 +367,26 @@ h1, h3 {
     color: inherit;
 }
 
-.stage-card {
-    background-color: #f8f9fa; /* Couleur de fond claire */
-    border: 2px solid #007bff; /* Bordure bleue */
-    border-radius: 10px; /* Coins arrondis */
+.stage-announcement {
+    background-color: #e7f3fe; /* Couleur de fond douce */
+    border-left: 5px solid #007bff; /* Bordure à gauche */
     padding: 20px; /* Espacement interne */
-    margin-top: 20px; /* Espacement supérieur */
+    margin: 20px 0; /* Espacement externe */
     text-align: center; /* Centrer le texte */
+    border-radius: 5px; /* Coins arrondis */
 }
 
-.stage-content h2 {
+.stage-announcement h2 {
     color: #007bff; /* Couleur du titre */
+    font-family: 'Lobster', cursive; /* Police accrocheuse */
 }
 
-.stage-content p {
-    margin: 10px 0; /* Espacement entre les paragraphes */
+.stage-announcement p {
+    color: #333; /* Couleur du texte */
+    font-size: 1.2rem; /* Taille du texte */
+}
+
+.stage-announcement:hover {
+    background-color: #d1e7fd; /* Couleur de fond au survol */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre au survol */
 }
