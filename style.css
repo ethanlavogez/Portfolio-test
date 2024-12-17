@@ -412,3 +412,26 @@ h1, h3 {
     background-color: #696969; /* Couleur de fond au survol */
 }
 
+/* -------------------- Pour mobiles ----------------*/
+
+/* Style par défaut pour ordinateur */
+h1 {
+    font-size: 3rem;
+    text-align: left;
+}
+
+/* Style pour les écrans de moins de 768px (mobiles) */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem; /* Réduit la taille de la police */
+        text-align: center; /* Centre le texte */
+    }
+    .container {
+        padding: 10px; /* Réduit les marges internes */
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
