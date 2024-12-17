@@ -303,3 +303,66 @@ h1, h3 {
     height: auto;
     margin-bottom: 1rem;
 }
+
+/* -------------------- Section contact ----------------*/
+
+/* Section Contact */
+.contact-title h1 {
+    font-size: 4rem; /* Taille plus grande */
+    color: #b22222; /* Rouge vintage */
+    font-family: 'Lobster', cursive; 
+    font-weight: bold; /* Mettre en gras */
+    line-height: 1.2; /* Réduction de l'espacement entre les lignes */
+    margin-bottom: 1.5rem; 
+    text-align: center;
+}
+
+/* Contact Cards */
+.contact-cards {
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+
+.contact-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 1.5rem;
+    width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-icon {
+    width: 80px; /* Augmentez la largeur */
+    height: 50px; /* Augmentez la hauteur */
+    margin-bottom: 1.5rem; /* Ajustez l'espacement */
+    transition: transform 0.3s ease; /* Ajout d'une légère animation */
+}
+
+.contact-card:hover .contact-icon {
+    transform: scale(1.2); /* Agrandit légèrement le logo au survol */
+}
+
+.contact-card p {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 0;
+}
+
+.contact-card a {
+    text-decoration: none;
+    color: inherit;
+}
