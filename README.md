@@ -9,10 +9,10 @@ Ce site utilise des technologies modernes pour offrir une interface simple, √©l√
 
 ## Preview
 
-[![Portfolio Preview](./assets/preview.png)](https://ethanlavogez.netlify.app/)
+[![Portfolio Preview](./assets/preview.png)](https://ethanlavogez-portfolio.netlify.app/)
 
 
-**[View Live Portfolio](https://ethanlavogez.netlify.app/)**
+**[View Live Portfolio]([https://ethanlavogez-portfolio.netlify.app/])**
 
 ## Features
 
