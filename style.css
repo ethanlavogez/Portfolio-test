@@ -416,32 +416,4 @@ h1, h3 {
     background-color: #696969; /* Couleur de fond au survol */
 }
 
-/* -------------------- Pour mobiles ----------------*/
-
-@media (max-width: 768px) {
-    h1 {
-        font-size: 2rem;
-        text-align: center;
-    }
-
-    h3 {
-        font-size: 1.2rem;
-        text-align: center;
-    }
-
-    .nav-tabs .nav-link {
-        font-size: 0.9rem; /* Réduit la taille des onglets */
-        padding: 5px 10px; /* Réduit les marges internes */
-    }
-
-    .container {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
 
