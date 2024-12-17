@@ -368,7 +368,7 @@ h1, h3 {
 }
 
 .stage-announcement {
-    background-color: #e7f3fe; /* Couleur de fond douce */
+    background-color: #ffcccc; /* Couleur de fond douce */
     border-left: 5px solid #b22222; /* Bordure à gauche */
     padding: 20px; /* Espacement interne */
     margin: 20px 0; /* Espacement externe */
@@ -387,6 +387,6 @@ h1, h3 {
 }
 
 .stage-announcement:hover {
-    background-color: #d1e7fd; /* Couleur de fond au survol */
+    background-color: #ffb3b3; /* Couleur de fond au survol */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre au survol */
 }
