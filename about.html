@@ -10,12 +10,12 @@
 <body>
     <header class="bg-light p-3">
         <div class="container d-flex justify-content-between align-items-center">
-            <div>
+            <div class="text-center text-md-start mb-3 mb-md-0">
                 <h1 class="m-0">Ethan Lavogez</h1>
                 <h3 class="m-0">Student in Healthcare Data Science</h3>
             </div>
             <nav>
-                <ul class="nav nav-tabs justify-content-end" id="portfolioTabs" role="tablist">
+                <ul class="nav nav-tabs justify-content-center justify-content-md-end" id="portfolioTabs" role="tablist">
                     <li class="nav-item">
                         <a class="nav-link" href="home.html" role="tab" aria-controls="Home" aria-selected="true">Home</a>
                     </li>
@@ -40,8 +40,9 @@
     </header>
 
     <!-- About Section -->
-    <div class="about container d-flex flex-column flex-md-row align-items-center min-vh-100">
-        <div class="row text-center">
+    <main style="padding-top: 120px;"> <!-- Compense la hauteur de l'en-tête -->
+        <div class="container">
+            <div class="row align-items-center">
             <!--Texte à gauche-->
             <div class="col-md-6">
                 <h1 class="about-title">About<br>Me</h1>
@@ -83,8 +84,9 @@
                 <p>Si vous avez des opportunités, n'hésitez pas à me contacter !</p>
                 <p class="mt-3"> <a href="contact.html" class="btn btn-primary">Me contacter</a> </p>
             </div>
+            </div>
         </div>
-    </div>
+    </main>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
