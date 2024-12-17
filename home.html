@@ -10,7 +10,7 @@
 </head>
 <body>
     <header class="bg-light p-3">
-        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <div class="container d-flex justify-content-between align-items-center">
             <div class="text-center text-md-start mb-3 mb-md-0">
                 <h1 class="m-0">Ethan Lavogez</h1>
                 <h3 class="m-0">Student in Healthcare Data Science</h3>
@@ -40,22 +40,26 @@
         </div>
     </header>
 
-    <div class="container home-section d-flex flex-column flex-md-row align-items-center min-vh-100">
-        <!--Left Section-->
-        <div class="col-md-6 text-left">
-            <h1 class="Home-title"><strong><em>Welcome to My Portfolio !</em></strong></h1>
-            <p>Dans ce portfolio, vous découvrirez mes compétences, mes parcours et ma vision de l'utilisation des données pour améliorer les résultats en santé. J'espère que vous trouverez ces informations utiles et inspirantes.</p>
-            <p>Merci de votre visite et n'hésitez pas à me contacter si vous avez des questions ou des opportunités de collaboration !</p>
-            <a href="about.html" class="btn btn-primary mt-3">Explorez-moi</a>
-        </div>
+    <main style="padding-top: 120px;"> <!-- Compense la hauteur de l'en-tête -->
+        <div class="container">
+            <div class="row align-items-center">
+                <!--Left Section-->
+                <div class="col-md-6 text-left">
+                    <h1 class="Home-title"><strong><em>Welcome to My Portfolio !</em></strong></h1>
+                        <p>Dans ce portfolio, vous découvrirez mes compétences, mes parcours et ma vision de l'utilisation des données pour améliorer les résultats en santé. J'espère que vous trouverez ces informations utiles et inspirantes.</p>
+                        <p>Merci de votre visite et n'hésitez pas à me contacter si vous avez des questions ou des opportunités de collaboration !</p>
+                        <a href="about.html" class="btn btn-primary mt-3">Explorez-moi</a>
+                </div>
 
-        <!-- Right Section -->
-        <div class="col-md-6 text-center">
-            <img src="assets/image_photo.png" alt="Ethan Lavogez" class="profile-img" style="margin-top: 0;">
-            <p class="quote"><em>Transformez les données en solutions pour un avenir meilleur.</em></p>
+                <!-- Right Section -->
+                <div class="col-md-6 text-center">
+                    <img src="assets/image_photo.png" alt="Ethan Lavogez" class="profile-img" style="margin-top: 0;">
+                        <p class="quote"><em>Transformez les données en solutions pour un avenir meilleur.</em></p>
+                </div>
+            </div>
         </div>
-    </div>
-
+    </main>
+    
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
