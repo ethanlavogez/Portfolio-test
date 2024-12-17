@@ -414,12 +414,6 @@ h1, h3 {
 
 /* -------------------- Pour mobiles ----------------*/
 
-/* Style par défaut pour ordinateur */
-h1 {
-    font-size: 3rem;
-    text-align: left;
-}
-
 /* Style pour les écrans de moins de 768px (mobiles) */
 @media (max-width: 768px) {
     h1 {
