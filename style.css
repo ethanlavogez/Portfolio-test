@@ -369,7 +369,7 @@ h1, h3 {
 
 .stage-announcement {
     background-color: #e7f3fe; /* Couleur de fond douce */
-    border-left: 5px solid #007bff; /* Bordure à gauche */
+    border-left: 5px solid #b22222; /* Bordure à gauche */
     padding: 20px; /* Espacement interne */
     margin: 20px 0; /* Espacement externe */
     text-align: center; /* Centrer le texte */
@@ -377,7 +377,7 @@ h1, h3 {
 }
 
 .stage-announcement h2 {
-    color: #007bff; /* Couleur du titre */
+    color: #b22222; /* Couleur du titre */
     font-family: 'Lobster', cursive; /* Police accrocheuse */
 }
 
