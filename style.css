@@ -83,8 +83,8 @@ h1, h3 {
 
 /* Photo de profil */
 .profile-img {
-    width: 250px; /* Ajustez la largeur selon vos besoins */
-    height: 300px; /* Ajustez la hauteur selon vos besoins */
+    width: 350px; /* Ajustez la largeur selon vos besoins */
+    height: 400px; /* Ajustez la hauteur selon vos besoins */
     border-radius: 50%; /* Maintient la forme ovale */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre pour un effet esthétique */
     object-fit: cover; /* Recadre l'image pour s'adapter au conteneur */
