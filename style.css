@@ -83,12 +83,13 @@ h1, h3 {
 
 /* Photo de profil */
 .profile-img {
-    border-radius: 50%; /* Pour une image de profil ronde */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre pour faire ressortir l'image */
-    max-width: 100%; /* S'assure que l'image ne déborde pas */
-    height: 400px; 
-    width: 300px;
-    margin-left: 20px;
+    width: 150px; /* Ajustez la largeur selon vos besoins */
+    height: 200px; /* Ajustez la hauteur selon vos besoins */
+    border-radius: 50%; /* Maintient la forme ovale */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre pour un effet esthétique */
+    object-fit: cover; /* Recadre l'image pour s'adapter au conteneur */
+    margin: 20px auto; /* Centrage avec marges */
+    display: block; /* Centrage horizontal */
 }
 
 .quote {
