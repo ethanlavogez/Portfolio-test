@@ -2,63 +2,76 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <!-- viewport ok -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portfolio - Ethan Lavogez</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Portfolio – Ethan Lavogez</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="bg-light p-3">
-        <div class="container d-flex justify-content-between align-items-center">
-            <div class="text-center text-md-start mb-3 mb-md-0">
-                <h1 class="m-0">Ethan Lavogez</h1>
-                <h3 class="m-0">Student in Healthcare Data Science</h3>
-            </div>
-            <nav>
-                <ul class="nav nav-tabs justify-content-center justify-content-md-end" id="portfolioTabs" role="tablist">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="home.html" role="tab" aria-controls="Home" aria-selected="true">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html" role="tab" aria-controls="about" aria-selected="false">A propos de moi</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="skills.html" role="tab" aria-controls="Skills" aria-selected="false">Compétences</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="experience.html" role="tab" aria-controls="Experiences" aria-selected="false">Experiences</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="education.html" role="tab" aria-controls="Formation" aria-selected="false">Formation</a>    
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html" role="tab" aria-controls="Contact" aria-selected="false">Contact</a>
-                    </li>
-                </ul>
-            </nav>
+    <!-- Navbar responsive -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="home.html">
+          <h1 class="h4 m-0">Ethan Lavogez</h1>
+        </a>
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">À propos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="skills.html">Compétences</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="experience.html">Expériences</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="education.html">Formation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
         </div>
-    </header>
+      </div>
+    </nav>
 
-    <div class="home container d-flex flex-column flex-md-row align-items-center min-vh-100">
-        <div class="row text-center">
-                <!--Left Section-->
-                <div class="col-md-6 text-left">
-                    <h1 class="Home-title"><strong><em>Welcome to My Portfolio !</em></strong></h1>
-                        <p>Dans ce portfolio, vous découvrirez mes compétences, mes parcours et ma vision de l'utilisation des données pour améliorer les résultats en santé. J'espère que vous trouverez ces informations utiles et inspirantes.</p>
-                        <p>Merci de votre visite et n'hésitez pas à me contacter si vous avez des questions ou des opportunités de collaboration !</p>
-                        <a href="about.html" class="btn btn-primary mt-3">Explorez-moi</a>
-                </div>
-
-                <!-- Right Section -->
-                <div class="col-md-6 text-center">
-                    <img src="assets/photo_ethan.JPG" alt="Ethan Lavogez" class="profile-img" style="margin-top: 0;">
-                        <p class="quote"><em>Transformez les données en solutions pour un avenir meilleur.</em></p>
-                </div>
+    <!-- Section d'accueil responsive -->
+    <main class="container py-5">
+      <div class="row align-items-center min-vh-75">
+        <!-- Texte -->
+        <div class="col-12 col-md-6 text-center text-md-start mb-4 mb-md-0">
+          <h2 class="fw-bold"><em>Welcome to My Portfolio !</em></h2>
+          <p>Dans ce portfolio, vous découvrirez mes compétences, mon parcours et ma vision de l'utilisation des données pour améliorer les résultats en santé. J’espère que vous trouverez ces informations utiles et inspirantes.</p>
+          <p>Merci de votre visite ! N’hésitez pas à me contacter pour toute question ou opportunité de collaboration.</p>
+          <a href="about.html" class="btn btn-primary">Explorez-moi</a>
         </div>
-    </div>
+        <!-- Image -->
+        <div class="col-12 col-md-6 text-center">
+          <img src="assets/photo_ethan.JPG"
+               alt="Ethan Lavogez"
+               class="img-fluid rounded-circle mb-3"
+               style="max-width: 300px;">
+          <p class="fst-italic">« Transformez les données en solutions pour un avenir meilleur. »</p>
+        </div>
+      </div>
+    </main>
 
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
